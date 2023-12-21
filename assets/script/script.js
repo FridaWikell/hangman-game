@@ -39,6 +39,18 @@ function selectAWord() {
 }
 
 // Check if users letter is in the correct word
+// Gör om till ångt if
+function compareAnswer(inputLetter) {
+    guesses.indexOf(inputLetter) === -1 ? guesses.push(inputLetter) : null;
+    document.getElementById(inputLetter).setAttribute('disabled', true);
+
+    if (word.indexOf(inputLetter) >= 0) {
+        inputWord();
+    } else if (word.indexOf(inputLetter) === -1) {
+        mistakesDone++;
+        hangmanUpdate();
+    }
+}
 
 /**
  * Update hangman image whenever the user enters an incorrect letter
@@ -60,6 +72,8 @@ function inputWord () {
     letterOk = word.split('').map(letter => (guesses.indexOf(letter) >= 0 ? letter : "_")).join('');
     document.getElementById('words-to-be-guessed').innerHTML = letterOk;
 }
+
+// When the user has made another mistake
 
 // Check if game is won
 
