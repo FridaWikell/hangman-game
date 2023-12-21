@@ -8,14 +8,14 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="text-center">Hangman</h1>
-        <div class="float-right">Wrong Guesses: <span id='mistakes'>0</span> of <span id='maxWrong'></span></div>
+        <h1 class="main-text">Hangman</h1>
+        <div class="placement-right">Wrong Guesses: <span id='mistakes-done'>0</span> of <span id='allowed-mistakes'></span></div>
         <div class="text-center">
-            <img id='hangmanPic' src="assets/images/hangman.png" alt="">
+            <img id='hangman-image' src="assets/images/hangman.png" alt="">
             <p>Guess the Programming Language:</p>
-            <p id="wordSpotlight">The word to be guessed goes here</p>
+            <p id="words-to-be-guessed">The word to be guessed goes here</p>
             <div id="keyboard"></div>
-            <button class="btn btn-info" onClick="reset()">Reset</button>
+            <button class="basic-button btn-info" onClick="reset()">Reset</button>
         </div>
     </div>
     
