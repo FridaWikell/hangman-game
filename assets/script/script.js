@@ -13,6 +13,8 @@ let mistakesDone = 0;
 let guesses = [];
 let letterOk = null;
 
+document.getElementById('allowed-mistakes').innerHTML = allowedMistakes;
+
 /**
 * Add keyboard to the page to let the user enter a letter. 
 * Code from https://github.com/simonjsuh/Vanilla-Javascript-Hangman-Game/blob/master/js/hangman.js
@@ -96,6 +98,18 @@ function doWeHaveALoser() {
 }
 
 // Reset game
+function resetGame() {
+    mistakesDone = 0;
+    guesses = [];
+    document.getElementById('hangman-image').src = '../images/hangman.png';
+
+    selectAWord();
+    inputWord();
+    anotherMistake();
+    createKeyboard();
+}
 
 //Functions to run
 createKeyboard();
+selectAWord();
+inputWord();
