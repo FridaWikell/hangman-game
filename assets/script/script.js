@@ -40,7 +40,9 @@ function selectAWord() {
 
 // Check if users letter is in the correct word
 
-// Update hangman image
+/**
+ * Update hangman image whenever the user enters an incorrect letter
+*/ 
 function hangmanUpdate() {
     document.getElementById('hangman-image').src = '../assets/images/hangman' + mistakesDone + '.png';
 }
