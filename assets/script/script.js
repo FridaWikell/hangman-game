@@ -13,8 +13,6 @@ let mistakesDone = 0;
 let guesses = [];
 let status = null;
 
-// Select a random word
-
 /**
 * Add keyboard to the page to let the user enter a letter. 
 * Code from https://github.com/simonjsuh/Vanilla-Javascript-Hangman-Game/blob/master/js/hangman.js
@@ -31,6 +29,13 @@ function createKeyboard() {
     ).join('');
 
     document.getElementById('keyboard').innerHTML = insideButtons;
+}
+
+/**
+ * Select a random word
+ */
+function selectAWord() {
+    word = nintendoCharacters[Math.floor(math.random() * nintendoCharacters.length)];
 }
 
 // Check if users letter is in the correct word
