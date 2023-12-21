@@ -15,7 +15,23 @@ let status = null;
 
 // Select a random word
 
-// Add buttoms to page
+/**
+* Add keyboard to the page to let the user enter a letter. 
+* Code from https://github.com/simonjsuh/Vanilla-Javascript-Hangman-Game/blob/master/js/hangman.js
+*/
+function createKeyboard() {
+    let insideButtons = 'abcdefghijklmnopqrstuvwxyz'.split('').map(letter =>
+        `
+        <button class = "basic-button button-logo first-button m-2"
+        id = '` + letter + `'
+        onClick="compareAnswer('` + letter + `')" >
+        ` + letter + `
+        </button>
+        `
+    ).join('');
+
+    document.getElementById('keyboard').innerHTML = insideButtons;
+}
 
 // Check if users letter is in the correct word
 
@@ -26,3 +42,6 @@ let status = null;
 // Check if game is lost
 
 // Reset game
+
+//Functions to run
+createKeyboard();
