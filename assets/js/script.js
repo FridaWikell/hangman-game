@@ -102,7 +102,7 @@ function doWeHaveALoser() {
 function resetGame() {
     mistakesDone = 0;
     guesses = [];
-    document.getElementById('hangman-image').src = '../images/hangman.png';
+    document.getElementById('hangman-image').src = 'assets/images/hangman.png';
 
     selectAWord();
     inputWord();
