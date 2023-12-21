@@ -76,6 +76,9 @@ function inputWord () {
 }
 
 // When the user has made another mistake
+function anotherMistake() {
+    document.getElementById('mistakes').innerHTML = mistakesDone;
+}
 
 // Check if game is won
 function doWeHaveAWinner() {
