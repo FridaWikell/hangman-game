@@ -41,6 +41,9 @@ function selectAWord() {
 // Check if users letter is in the correct word
 
 // Update hangman image
+function hangmanUpdate() {
+    document.getElementById('hangman-image').src = '../assets/images/hangman' + mistakesDone + '.png';
+}
 
 // Check if game is won
 
