@@ -12,6 +12,7 @@ let allowedMistakes = 7;
 let mistakesDone = 0;
 let guesses = [];
 let letterOk = null;
+let word;
 
 document.getElementById('allowed-mistakes').innerHTML = allowedMistakes;
 
@@ -37,7 +38,7 @@ function createKeyboard() {
  * Select a random word
  */
 function selectAWord() {
-    word = nintendoCharacters[Math.floor(math.random() * nintendoCharacters.length)];
+    word = nintendoCharacters[Math.floor(Math.random() * nintendoCharacters.length)];
 }
 
 // Check if users letter is in the correct word
