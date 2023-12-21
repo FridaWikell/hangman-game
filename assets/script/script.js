@@ -76,8 +76,19 @@ function inputWord () {
 // When the user has made another mistake
 
 // Check if game is won
+function doWeHaveAWinner() {
+    if (letterOk === word) {
+        document.getElementById('keyboard').innerHTML = 'You Won!!!';
+    }
+}
 
 // Check if game is lost
+function doWeHaveALoser() {
+    if (mistakesDone === allowedMistakes) {
+        document.getElementById('words-to-be-guessed') = 'The answer was: ' + word;
+        document.getElementById('keyboard').innerHTML = 'You Lost!!!';
+    }
+}
 
 // Reset game
 
