@@ -3,7 +3,8 @@ let nintendoCharacters = [
     "toadstool",
     "toad",
     "link",
-    "zelda"
+    "zelda",
+    "luigi"
 ]
 
 // Global variabels
