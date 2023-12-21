@@ -46,9 +46,11 @@ function compareAnswer(inputLetter) {
 
     if (word.indexOf(inputLetter) >= 0) {
         inputWord();
+        doWeHaveAWinner();
     } else if (word.indexOf(inputLetter) === -1) {
         mistakesDone++;
         hangmanUpdate();
+        doWeHaveALoser();
     }
 }
 
