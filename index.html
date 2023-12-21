@@ -25,17 +25,31 @@
         <hr>
     </header>
 
-    <div class="container">
-        <h1 class="main-text">Hangman</h1>
-        <div class="placement-right">Wrong Guesses: <span id='mistakes-done'>0</span> of <span id='allowed-mistakes'></span></div>
-        <div class="text-center">
-            <img id='hangman-image' src="assets/images/hangman.png" alt="">
-            <p>Guess the Programming Language:</p>
-            <p id="words-to-be-guessed">The word to be guessed goes here</p>
-            <div id="keyboard"></div>
-            <button class="basic-button button-info" onClick="reset()">Reset</button>
+    <!-- Main content -->
+    <main>
+        <div class="chalkboard">
+            <img id="hangman" src="assets/images/hangman.png" alt="Hangman">
+            <ul id="correct-anser"></ul>
+            <div id="wrong-guesses">Wrong Guesses: <span id='mistakes-done'>0</span> of <span id='allowed-mistakes'></span></div>
+            <div class="text-center">
+                <p>Which Nintento Figure are we looking for?</p>
+                <p id="words-to-be-guessed">The word to be guessed goes here</p>
+                <div id="keyboard"></div>
+                <button class="basic-button button-info" onClick="resetGame()">Start over</button>
+            </div>
         </div>
-    </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <hr>
+        <div id="rules">
+            <h3>How to play</h3>
+            <p>The goal is to guess the secret word before the man is hung. In every guess, you have to guess at one letter.
+                If the letter is in the correct word, the letter will appear at the blank lines. If it is wrong, one line
+                will be added to the man. After six incorrect guesses, the man is hung and you lose the game...</p>
+        </div>
+    </footer>
     
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/f45dddf36e.js" crossorigin="anonymous"></script>
