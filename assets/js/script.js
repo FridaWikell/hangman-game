@@ -9,9 +9,9 @@ let nintendoCharacters = [
 
 // Global variabels
 let answer = '';
-let maxWrong = 7;
-let mistakes = 0;
-let guesses = [];
+let mistakesAllowed = 7;
+let mistakesMade = 0;
+let guessesMade = [];
 let letterOk = null;
 let word;
 
@@ -43,14 +43,14 @@ function selectAWord() {
 // Check if users letter is in the correct word
 // Gör om till ångt if
 function compareAnswer(inputLetter) {
-    guesses.indexOf(inputLetter) === -1 ? guesses.push(inputLetter) : null;
+    guessesMade.indexOf(inputLetter) === -1 ? guessesMade.push(inputLetter) : null;
     document.getElementById(inputLetter).setAttribute('disabled', true);
 
     if (word.indexOf(inputLetter) >= 0) {
         inputWord();
         doWeHaveAWinner();
     } else if (word.indexOf(inputLetter) === -1) {
-        mistakes++;
+        mistakesMade++;
         anotherMistake();
         hangmanUpdate();
         doWeHaveALoser();
@@ -62,7 +62,7 @@ function compareAnswer(inputLetter) {
 */ 
 // Help from https://stackoverflow.com/questions/11722400/programmatically-change-the-src-of-an-img-tag
 function hangmanUpdate() {
-    document.getElementById('hangman-image').src = 'assets/images/hangman' + mistakes + '.png';
+    document.getElementById('hangman-image').src = 'assets/images/hangman' + mistakesMade + '.png';
 }
 
 // When a word is guessed
@@ -75,13 +75,13 @@ function hangmanUpdate() {
 //  "_"}
 // ).join(');
 function inputWord () {
-    letterOk = word.split('').map(letter => (guesses.indexOf(letter) >= 0 ? letter : "_")).join('');
+    letterOk = word.split('').map(letter => (guessesMade.indexOf(letter) >= 0 ? letter : "_")).join('');
     document.getElementById('words-to-be-guessed').innerHTML = letterOk;
 }
 
 // When the user has made another mistake
 function anotherMistake() {
-    document.getElementById('mistakes').innerHTML = mistakes;
+    document.getElementById('mistakes-made').innerHTML = mistakesMade;
 }
 
 // Check if game is won
@@ -93,7 +93,7 @@ function doWeHaveAWinner() {
 
 // Check if game is lost
 function doWeHaveALoser() {
-    if (mistakes === maxWrong) {
+    if (mistakesMade === mistakesAllowed) {
         document.getElementById('words-to-be-guessed').innerHTML = 'The answer was: ' + word;
         document.getElementById('keyboard').innerHTML = 'You Lost!!!';
     }
@@ -101,8 +101,8 @@ function doWeHaveALoser() {
 
 // Reset game
 function resetGame() {
-    mistakes = 0;
-    guesses = [];
+    mistakesMade = 0;
+    guessesMade = [];
     document.getElementById('hangman-image').src = 'assets/images/hangman0.png';
 
     selectAWord();
@@ -111,7 +111,7 @@ function resetGame() {
     createKeyboard();
 }
 
-document.getElementById('maxWrong').innerHTML = maxWrong;
+document.getElementById('mistakes-allowed').innerHTML = mistakesAllowed;
 
 //Functions to run
 createKeyboard();
