@@ -9,13 +9,11 @@ let nintendoCharacters = [
 
 // Global variabels
 let answer = '';
-let allowedMistakes = 7;
-let mistakesDone = 0;
+let maxWrong = 7;
+let mistakes = 0;
 let guesses = [];
 let letterOk = null;
 let word;
-
-document.getElementById('allowed-mistakes').innerHTML = allowedMistakes;
 
 /**
 * Add keyboard to the page to let the user enter a letter. 
@@ -52,7 +50,8 @@ function compareAnswer(inputLetter) {
         inputWord();
         doWeHaveAWinner();
     } else if (word.indexOf(inputLetter) === -1) {
-        mistakesDone++;
+        mistakes++;
+        anotherMistake();
         hangmanUpdate();
         doWeHaveALoser();
     }
@@ -62,7 +61,7 @@ function compareAnswer(inputLetter) {
  * Update hangman image whenever the user enters an incorrect letter
 */ 
 function hangmanUpdate() {
-    document.getElementById('hangman-image').src = '../assets/images/hangman' + mistakesDone + '.png';
+    document.getElementById('hangman').src = 'assets/images/hangman' + mistakes + '.png';
 }
 
 // When a word is guessed
@@ -81,7 +80,7 @@ function inputWord () {
 
 // When the user has made another mistake
 function anotherMistake() {
-    document.getElementById('mistakes').innerHTML = mistakesDone;
+    document.getElementById('mistakes').innerHTML = mistakes;
 }
 
 // Check if game is won
@@ -93,7 +92,7 @@ function doWeHaveAWinner() {
 
 // Check if game is lost
 function doWeHaveALoser() {
-    if (mistakesDone === allowedMistakes) {
+    if (mistakes === maxWrong) {
         document.getElementById('words-to-be-guessed') = 'The answer was: ' + word;
         document.getElementById('keyboard').innerHTML = 'You Lost!!!';
     }
@@ -101,15 +100,17 @@ function doWeHaveALoser() {
 
 // Reset game
 function resetGame() {
-    mistakesDone = 0;
+    mistakes = 0;
     guesses = [];
-    document.getElementById('hangman-image').src = 'assets/images/hangman.png';
+    document.getElementById('hangman').src = 'assets/images/hangman0.png';
 
     selectAWord();
     inputWord();
     anotherMistake();
     createKeyboard();
 }
+
+document.getElementById('maxWrong').innerHTML = maxWrong;
 
 //Functions to run
 createKeyboard();
