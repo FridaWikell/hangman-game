@@ -51,6 +51,7 @@ hr {
 main {
     color: #f7f4f4;
     flex: 1 0 auto;
+    width: 100%;
 }
 
 #chalkboard {
@@ -68,14 +69,13 @@ main {
 }
 
 #hangman-image {
-    position: relative;
     height: 300px;
+    margin: 0 auto;
 }
 
 #words-section {
     display: flex;
     flex-direction: column;
-    flex-basis: 100%;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -134,4 +134,38 @@ footer {
 
 footer hr {
     margin-bottom: 15px;
+}
+
+/* Media query */
+/* Tablets and larger (768px and larger) */
+@media screen and (min-width: 768px) {
+    #chalkboard {
+        width: 80%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    #hangman-image {
+        display: flex;
+        justify-self: flex-start;
+        width: 50%;
+        padding-left: 30px;
+
+    }
+
+    #words-section {
+        display: flex;
+        justify-self: flex-end;
+        width: 50%;
+    }
+
+    #wrong-guesses {
+        padding-top: 20px;
+        font-size: 18px;
+    }
+
+    #rules {
+        width: 80%;
+    }
 }
