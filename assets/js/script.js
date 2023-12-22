@@ -52,17 +52,9 @@ function compareAnswer(inputLetter) {
     } else if (word.indexOf(inputLetter) === -1) {
         mistakesMade++;
         anotherMistake();
-        hangmanUpdate();
+        document.getElementById('hangman-image').src = 'assets/images/hangman' + mistakesMade + '.png';
         doWeHaveALoser();
     }
-}
-
-/**
- * Update hangman image whenever the user enters an incorrect letter
-*/ 
-// Help from https://stackoverflow.com/questions/11722400/programmatically-change-the-src-of-an-img-tag
-function hangmanUpdate() {
-    document.getElementById('hangman-image').src = 'assets/images/hangman' + mistakesMade + '.png';
 }
 
 // When a word is guessed
