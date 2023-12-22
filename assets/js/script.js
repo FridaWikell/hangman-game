@@ -15,6 +15,8 @@ let guessesMade = [];
 let letterOk = null;
 let word;
 
+document.getElementById("restart-button").addEventListener("click", resetGame);
+
 /**
 * Add keyboard to the page to let the user enter a letter. 
 * Code from https://github.com/simonjsuh/Vanilla-Javascript-Hangman-Game/blob/master/js/hangman.js
@@ -90,7 +92,7 @@ function doWeHaveAWinner() {
 }
 
 /**
- * Chck if the game is lost
+ * Check if the game is lost
  */
 function doWeHaveALoser() {
     if (mistakesMade === mistakesAllowed) {
