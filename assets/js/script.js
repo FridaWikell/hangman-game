@@ -60,6 +60,7 @@ function compareAnswer(inputLetter) {
 /**
  * Update hangman image whenever the user enters an incorrect letter
 */ 
+// Help from https://stackoverflow.com/questions/11722400/programmatically-change-the-src-of-an-img-tag
 function hangmanUpdate() {
     document.getElementById('hangman-image').src = 'assets/images/hangman' + mistakes + '.png';
 }
@@ -93,7 +94,7 @@ function doWeHaveAWinner() {
 // Check if game is lost
 function doWeHaveALoser() {
     if (mistakes === maxWrong) {
-        document.getElementById('words-to-be-guessed') = 'The answer was: ' + word;
+        document.getElementById('words-to-be-guessed').innerHTML = 'The answer was: ' + word;
         document.getElementById('keyboard').innerHTML = 'You Lost!!!';
     }
 }
