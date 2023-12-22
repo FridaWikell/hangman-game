@@ -66,7 +66,7 @@ main {
     align-items: center;
 }
 
-#hangman {
+#hangman-image {
     background: no-repeat center center/cover;
     position: relative;
     height: 300px;

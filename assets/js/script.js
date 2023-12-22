@@ -61,7 +61,7 @@ function compareAnswer(inputLetter) {
  * Update hangman image whenever the user enters an incorrect letter
 */ 
 function hangmanUpdate() {
-    document.getElementById('hangman').src = 'assets/images/hangman' + mistakes + '.png';
+    document.getElementById('hangman-image').src = 'assets/images/hangman' + mistakes + '.png';
 }
 
 // When a word is guessed
@@ -102,7 +102,7 @@ function doWeHaveALoser() {
 function resetGame() {
     mistakes = 0;
     guesses = [];
-    document.getElementById('hangman').src = 'assets/images/hangman0.png';
+    document.getElementById('hangman-image').src = 'assets/images/hangman0.png';
 
     selectAWord();
     inputWord();
