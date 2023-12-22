@@ -40,16 +40,23 @@ function selectAWord() {
     word = nintendoCharacters[Math.floor(Math.random() * nintendoCharacters.length)];
 }
 
-// Check if users letter is in the correct word
-// Gör om till ångt if
-function compareAnswer(inputLetter) {
-    guessesMade.indexOf(inputLetter) === -1 ? guessesMade.push(inputLetter) : null;
+// Om indexof https://www.freecodecamp.org/news/how-to-check-if-a-string-contains-a-substring-javascript/
+/**
+ * Compare if the input exist in the correct answer
+ */
+function compareAnswer(inputLetter) { 
+    // Disable the pressed letter 
     document.getElementById(inputLetter).setAttribute('disabled', true);
 
+    if (guessesMade.indexOf(inputLetter) === -1) {
+        guessesMade.push(inputLetter)
+    } 
+
+    //If input letter is in the correct answer
     if (word.indexOf(inputLetter) >= 0) {
         inputWord();
         doWeHaveAWinner();
-    } else if (word.indexOf(inputLetter) === -1) {
+    } else {
         mistakesMade++;
         anotherMistake();
         document.getElementById('hangman-image').src = 'assets/images/hangman' + mistakesMade + '.png';
@@ -57,33 +64,34 @@ function compareAnswer(inputLetter) {
     }
 }
 
-// When a word is guessed
-// När allt är klart. Kolla om detta går att skriva om till:
-// letterOk = word.split('').map(letter
-// function (guesses.indexOf(letter)
-/// if (>= 0) {
-//  letter
-// } else {
-//  "_"}
-// ).join(');
+// Help from https://stackoverflow.com/questions/74006820/how-to-split-a-word-in-a-string-and-replace-letters-with-different-characters-in 
+/**
+ * Update the correct guessed letteres
+ */
 function inputWord () {
     letterOk = word.split('').map(letter => (guessesMade.indexOf(letter) >= 0 ? letter : "_")).join('');
     document.getElementById('words-to-be-guessed').innerHTML = letterOk;
 }
 
-// When the user has made another mistake
+/**
+ * Updates how many mistakes the user has made
+ */ 
 function anotherMistake() {
     document.getElementById('mistakes-made').innerHTML = mistakesMade;
 }
 
-// Check if game is won
+/**
+ * Check if the game is won
+ */
 function doWeHaveAWinner() {
     if (letterOk === word) {
         document.getElementById('keyboard').innerHTML = 'You Won!!!';
     }
 }
 
-// Check if game is lost
+/**
+ * Chck if the game is lost
+ */
 function doWeHaveALoser() {
     if (mistakesMade === mistakesAllowed) {
         document.getElementById('words-to-be-guessed').innerHTML = 'The answer was: ' + word;
@@ -91,7 +99,9 @@ function doWeHaveALoser() {
     }
 }
 
-// Reset game
+/**
+ * Restarts the game
+ */
 function resetGame() {
     mistakesMade = 0;
     guessesMade = [];
@@ -105,7 +115,7 @@ function resetGame() {
 
 document.getElementById('mistakes-allowed').innerHTML = mistakesAllowed;
 
-//Functions to run
+//Functions to run at start
 createKeyboard();
 selectAWord();
 inputWord();
