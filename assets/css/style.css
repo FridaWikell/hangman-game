@@ -8,14 +8,6 @@
     box-sizing: border-box;
 }
 
-/* Header */
-header {
-    padding: 10px 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 /* General styles */
 body {
     display: flex;
@@ -33,7 +25,7 @@ h1, h2, h3, h4 {
 
 /* Header */
 header {
-    padding: 10px 15px;
+    padding: 18px 15px 11px 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,7 +76,6 @@ main {
 #words-to-be-guessed {
     font-size: 45px;
     gap: 10px;
-
 }
 
 #wrong-guesses {
@@ -115,6 +106,10 @@ main {
     font-family: inherit;
 }
 
+.basic-button:hover {
+    cursor: pointer;
+}
+
 #restart-button {
     max-width: 90px;
     margin-top: 20px;
@@ -143,7 +138,7 @@ footer hr {
     hr {
         width: clamp(598px, 80%, 803px);
     }
-    
+
     #chalkboard {
         width: 80%;
         flex-direction: row;
