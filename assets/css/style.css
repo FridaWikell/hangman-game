@@ -86,6 +86,43 @@ main {
     flex-basis: 100%;
 }
 
+#wrong-guesses {
+    font-size: 17px;
+}
+
+#keyboard-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 3px;
+}
+
+.basic-button {
+    padding: 5px 7px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+#keyboard-button {
+    width: calc(100% / 9 - 5px);
+}
+
+#restart-button {
+    
+    margin-top: 20px;
+   
+}
+
 /* Footer */
 footer {
     display: flex;
