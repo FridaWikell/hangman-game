@@ -22,7 +22,7 @@ let word;
 function createKeyboard() {
     let insideButtons = 'abcdefghijklmnopqrstuvwxyz'.split('').map(letter =>
         `
-        <button class = "basic-button" id = "keyboard-button"
+        <button class = "basic-button" "keyboard-button"
         id = '` + letter + `'
         onClick="compareAnswer('` + letter + `')" >
         ` + letter + `
