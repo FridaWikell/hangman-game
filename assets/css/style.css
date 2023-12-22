@@ -115,6 +115,18 @@ main {
     margin-top: 20px;
 }
 
+/* Lose page */
+#yoshi-text {
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-self: center;
+    margin: 0 auto;
+    display: none;
+}
+
 /* Footer */
 footer {
     display: flex;

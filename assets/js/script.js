@@ -13,7 +13,7 @@ let mistakesAllowed = 7;
 let mistakesMade = 0;
 let guessesMade = [];
 let letterOk = null;
-let word;
+let word; 
 
 document.getElementById("restart-button").addEventListener("click", resetGame);
 
@@ -96,8 +96,11 @@ function doWeHaveAWinner() {
  */
 function doWeHaveALoser() {
     if (mistakesMade === mistakesAllowed) {
-        document.getElementById('words-to-be-guessed').innerHTML = 'The answer was: ' + word;
-        document.getElementById('keyboard').innerHTML = 'You Lost!!!';
+        document.getElementById('chalkboard').style.background = "url(assets/images/yoshi.webp) no-repeat center center/cover";
+        document.getElementById('hangman-image').style.display = "none";
+        document.getElementById('words-section').style.display = "none";
+        document.getElementById('yoshi-text').style.display = "block";
+        document.getElementById('word').innerHTML = word;
     }
 }
 
@@ -108,6 +111,10 @@ function resetGame() {
     mistakesMade = 0;
     guessesMade = [];
     document.getElementById('hangman-image').src = 'assets/images/hangman0.png';
+    document.getElementById('hangman-image').style.display = "block";
+    document.getElementById('words-section').style.display = "block";
+    document.getElementById('yoshi-text').style.display = "none";
+    document.getElementById('chalkboard').style.background = "url(assets/images/chalkboard.webp) no-repeat center center/cover";
 
     selectAWord();
     inputWord();
