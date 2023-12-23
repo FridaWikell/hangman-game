@@ -116,7 +116,7 @@ main {
 }
 
 /* Lose page */
-#yoshi-text {
+#yoshi-text, #mario-text {
     width: 80%;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
@@ -165,7 +165,6 @@ footer hr {
         width: 50%;
         padding-left: 30px;
         margin: 0;
-
     }
 
     #words-section {
@@ -183,7 +182,7 @@ footer hr {
         width: clamp(574px, 80%, 779px);
     }
 
-    #yoshi-text {
+    #yoshi-text, #mario-text {
         width: 40%;
     }
 }

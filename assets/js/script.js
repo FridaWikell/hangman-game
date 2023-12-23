@@ -87,7 +87,10 @@ function anotherMistake() {
  */
 function doWeHaveAWinner() {
     if (letterOk === word) {
-        document.getElementById('keyboard').innerHTML = 'You Won!!!';
+        document.getElementById('chalkboard').style.background = "url(assets/images/mario.webp) no-repeat right center/cover";
+        document.getElementById('hangman-image').style.display = "none";
+        document.getElementById('words-section').style.display = "none";
+        document.getElementById('mario-text').style.display = "block";
     }
 }
 
@@ -100,7 +103,7 @@ function doWeHaveALoser() {
         document.getElementById('hangman-image').style.display = "none";
         document.getElementById('words-section').style.display = "none";
         document.getElementById('yoshi-text').style.display = "block";
-        document.getElementById('word').innerHTML = word;
+        document.getElementById('word').innerHTML = word.toUpperCase();
     }
 }
 
