@@ -1,122 +1,136 @@
 /* Fonts from Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Englebert&family=Patrick+Hand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Englebert&family=Patrick+Hand&display=swap");
 
 /* Override browsers default styles */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* General styles */
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    font-family: 'Patrick Hand', sans-serif;
-    background-color: #C1C1C1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Patrick Hand", sans-serif;
+  background-color: #c1c1c1;
 }
 
-h1, h2, h3, h4 {
-    font-family: 'Englebert', sans-serif;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Englebert", sans-serif;
 }
 
 /* Header */
 header {
-    padding: 18px 15px 11px 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+  padding: 18px 15px 11px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 hr {
-    margin: 5px 0 8px 0;
-    border: 1px solid #000000;
-    width: 90%;
+  margin: 5px 0 8px 0;
+  border: 1px solid #000000;
+  width: 90%;
 }
 
 /* Main Content */
 
 main {
-    color: #f7f4f4;
-    flex: 1 0 auto;
-    width: 100%;
+  color: #f7f4f4;
+  flex: 1 0 auto;
+  width: 100%;
 }
 
 #chalkboard {
-    background: url("../images/chalkboard.webp") no-repeat center center/cover;
-    width: 90%;
-    min-height: 400px;
-    position: relative;
-    margin: 0 auto;
-    border: solid 2px #000000;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    padding-bottom: 20px;
+  background: url("../images/chalkboard.webp") no-repeat center center/cover;
+  width: 90%;
+  min-height: 400px;
+  position: relative;
+  margin: 0 auto;
+  border: solid 2px #000000;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 20px;
 }
 
 #hangman-image {
-    height: 300px;
-    margin: 20px auto 0 auto;
+  height: 300px;
+  margin: 20px auto 0 auto;
 }
 
 #words-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 #words-to-be-guessed {
-    font-size: 45px;
-    gap: 10px;
+  font-size: 45px;
+  gap: 10px;
 }
 
 #wrong-guesses {
-    font-size: 17px;
+  font-size: 17px;
 }
 
 #keyboard-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #keyboard {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 20px;
-    width: 90%;
-    max-width: 300px;
-    margin: 0 auto;
-    justify-content: center;
-    gap: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  width: 90%;
+  max-width: 300px;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 3px;
 }
 
 .basic-button {
-    padding: 5px 7px;
-    border-radius: 5px;
-    font-size: 16px;
-    font-family: inherit;
+  padding: 5px 7px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: inherit;
 }
 
 .basic-button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #restart-button {
-    max-width: 90px;
-    margin-top: 20px;
+  max-width: 90px;
+  margin-top: 20px;
 }
 
 /* Lose page */
-#yoshi-text, #mario-text {
+#yoshi-text {
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-self: center;
+  margin: 0 auto;
+  display: none;
+}
+
+#mario-text {
     width: 80%;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
@@ -129,60 +143,61 @@ main {
 
 /* Footer */
 footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px 10px;
 }
 
 #rules {
-    padding: 0px 12px 10px 12px;
+  padding: 0px 12px 10px 12px;
 }
 
 footer hr {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 /* Media query */
 /* Tablets and larger (768px and larger) */
 @media screen and (min-width: 768px) {
-    hr {
-        width: clamp(598px, 80%, 803px);
-    }
+  hr {
+    width: clamp(598px, 80%, 803px);
+  }
 
-    #chalkboard {
-        width: 80%;
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding: 0;
-        max-width: 615px;
-    }
+  #chalkboard {
+    width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    max-width: 615px;
+  }
 
-    #hangman-image {
-        display: flex;
-        justify-self: flex-start;
-        width: 50%;
-        padding-left: 30px;
-        margin: 0;
-    }
+  #hangman-image {
+    display: flex;
+    justify-self: flex-start;
+    width: 50%;
+    padding-left: 30px;
+    margin: 0;
+  }
 
-    #words-section {
-        display: flex;
-        justify-self: flex-end;
-        width: 50%;
-    }
+  #words-section {
+    display: flex;
+    justify-self: flex-end;
+    width: 50%;
+  }
 
-    #wrong-guesses {
-        padding-top: 20px;
-        font-size: 18px;
-    }
+  #wrong-guesses {
+    padding-top: 20px;
+    font-size: 18px;
+  }
 
-    #rules {
-        width: clamp(574px, 80%, 779px);
-    }
+  #rules {
+    width: clamp(574px, 80%, 779px);
+  }
 
-    #yoshi-text, #mario-text {
-        width: 40%;
-    }
+  #yoshi-text, #mario-text
+  {
+    width: 40%;
+  }
 }
