@@ -117,7 +117,7 @@ main {
 
 /* Lose page */
 #yoshi-text {
-    width: 40%;
+    width: 80%;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
@@ -181,5 +181,9 @@ footer hr {
 
     #rules {
         width: clamp(574px, 80%, 779px);
+    }
+
+    #yoshi-text {
+        width: 40%;
     }
 }

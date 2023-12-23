@@ -96,7 +96,7 @@ function doWeHaveAWinner() {
  */
 function doWeHaveALoser() {
     if (mistakesMade === mistakesAllowed) {
-        document.getElementById('chalkboard').style.background = "url(assets/images/yoshi.webp) no-repeat center center/cover";
+        document.getElementById('chalkboard').style.background = "url(assets/images/yoshi.webp) no-repeat left center/cover";
         document.getElementById('hangman-image').style.display = "none";
         document.getElementById('words-section').style.display = "none";
         document.getElementById('yoshi-text').style.display = "block";
