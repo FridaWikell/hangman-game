@@ -1,5 +1,17 @@
 // Correct answers
-let nintendoCharacters = ["toadstool", "toad", "link", "zelda", "luigi"];
+let nintendoCharacters = [
+    "toadstool", 
+    "toad", 
+    "link", 
+    "zelda", 
+    "luigi",
+    "mario",
+    "pit",
+    "peach",
+    "bowser",
+    "ganon",
+    "palutena"
+];
 
 // Global variabels
 let answer = "";
@@ -43,8 +55,7 @@ function createKeyboard() {
  * Select a random word
  */
 function selectAWord() {
-  word =
-    nintendoCharacters[Math.floor(Math.random() * nintendoCharacters.length)];
+  word = nintendoCharacters[Math.floor(Math.random() * nintendoCharacters.length)];
 }
 
 // Om indexof https://www.freecodecamp.org/news/how-to-check-if-a-string-contains-a-substring-javascript/
