@@ -8,15 +8,46 @@ The site is a game for having fun and test your knowledge in retro Nintento game
 
 ## Table of Contents
 
+[Hangman - Retro Nintendo Games Characters](#hangman---retro-nintendo-games-characters)
+[Introduction](#introduction)
+[Table of Contents](#table-of-contents)
+[User Experience](#user-experience)
+[User Goals](#user-goals)
+[Site Owner Goals](#site-owner-goals)
+[Design](#design)
+[Colour Scheme](#colour-scheme)
+[Typography](#typography)
+[Imagery](#imagery)
+[Wireframes](#wireframes)
+[Features](#features)
+[Header](#header)
+[Chalkboard area](#chalkboard-area)
+[Keyboard](#keyboard)
+[Footer](#footer)
+[Winning page](#winning-page)
+[Losing page](#losing-page)
+[Features to be Added](#features-to-be-added)
+[Testing](#testing)
+[Validation of Code](#validation-of-code)
+[Lighthouse](#lighthouse)
+[Wave Webaim](#wave-webaim)
+[Contrast Grid](#contrast-grid)
+[Manual Testing](#manual-testing)
+[Technologies Used](#technologies-used)
+[Deployment](#deployment)
+[Credits](#credits)
+[Code](#code)
+[Images](#images)
+[Other](#other)
+[Acknowledgements](#acknowledgements)
+
 ## User Experience
 
-### User Stories
-
-#### User Goals
+### User Goals
 
 The user should experience a retro flashback to the great period when Mario was the greatest hero, the princess was always in another castle and you had to leave the Nintendo on during the nights because you couldn't save your progress. The user should be able to play and test their knowledge in retro Nintendo game characters.
 
-#### Site Owner Goals
+### Site Owner Goals
 
 The site owner goals is to share the interest about retro Nintendo games and provide a fun experience for the user.
 
@@ -48,21 +79,31 @@ The wireframes for desktop, tablet devices and mobile devices.
 
 The headers purpose is to help the user to see what the theme is.
 
+### Chalkboard area
+
 ![Screenshot of the chalkboard area](doc/game-area.webp)
 
 The game area were the user initially can see the number of letters the correct answer. The hangman is displayed and updated when a incorrect guess is made. It's also here the correct guessed letters will appear. The number of incorrect guesses are displayed here.
+
+### Keyboard
 
 ![Screenshot of the keyboard](doc/keyboard.webp)
 
 The keyboard with the letters a-z. The user will use this letter to guess which the hidden answer is. When a letter is pressed, it becomes disabled until you use the "Start over" button. The button reset the game, clear the correct and incorrect guesses and present a new hidden answer.
 
+### Footer
+
 ![Screenshot of the footer](doc/footer.webp)
 
 The footer explains the rules of the hangman game.
 
+### Winning page
+
 ![Screenshot of the winning page](doc/winning-page.webp)
 
 The screen that is shown instead of the chalkboard when the game is won. The text give compliments to the user after giving the correct answer.
+
+### Losing page
 
 ![Screenshot of the losing page](doc/loosing-page.webp)
 
@@ -89,11 +130,17 @@ The test at [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) resulted w
 You can perform a test of your website for performance, accessibility, best practices and SEO through the google chrome lighthouse test - it is in your Dev tools. Bear in mind that your internet connection speed plays a part in the performance figures obtained. Where it scores low, it will give you suggestions on how to improve the site - read the suggestions and think about how to implement them - it could be a good idea.
 Do this for both Desktop and Mobile.
 
-### Wave Webaim - accessibility testing
+### Wave Webaim
 
 ![Screenshot of Wave Webaim results](doc/hangman-wave.webp)
 
 The test at Wavw Webaim resulted in 0 errors. The contrast errors don't take consideration that the chalkboard is the background for the text, therefor the contrast errors.
+
+### Contrast Grid
+
+![Screenshot of Contrast Grid results](doc/hangman-contrast-grid.webp)
+
+The test at [Contrast Grid](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%23FFFFFF%2C%20Text%20at%20chalkboard%0D%0A%23000000%2C%20Header%20%26%20footer%20text%0D%0A%23c1c1c1%2C%20Background%0D%0A%23f0f0f0%2C%20Button%20background%0D%0A%23595959%2C%20Chalkboard&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp) resulted in only AAA results in the combination used at the website.
 
 ### Manual Testing
 
@@ -127,7 +174,11 @@ Detail how to clone the repository, how to fork the repository - how to run the 
 
 ### Images
 
-You need to credit where you got anything for your site from.. where are the images from, are they all from the same site? where did you get the content from, if you wrote it yourself, did you fact check anywhere? did you get code from anywhere? if so, it needs to be clearly marked in both the code and the readme.
+To convert the images to webp, [Convertio](https://convertio.co/) and [Cloudconvert](https://cloudconvert.com/) was used. [TinyPNG](https://tinypng.com/) was used to compress the images.
+
+### Other
+
+Picking the color from the chalkboard and the button background to the [Contrast Grid](#contrast-grid) was made using [Pickcoloronline](https://pickcoloronline.com/tutorials/pick-color-from-website/).
 
 ## Acknowledgements
 
