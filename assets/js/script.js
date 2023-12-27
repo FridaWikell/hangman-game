@@ -77,8 +77,7 @@ function compareAnswer(inputLetter) {
   } else {
     mistakesMade++;
     anotherMistake();
-    document.getElementById("hangman-image").src =
-      "assets/images/hangman" + mistakesMade + ".png";
+    document.getElementById("hangman-image").src = "assets/images/hangman" + mistakesMade + ".png";
     doWeHaveALoser();
   }
 }
@@ -107,8 +106,7 @@ function anotherMistake() {
  */
 function doWeHaveAWinner() {
   if (letterOk === word) {
-    document.getElementById("chalkboard").style.background =
-      "url(assets/images/mario.webp) no-repeat right center/cover";
+    document.getElementById("chalkboard").style.background = "url(assets/images/mario.webp) no-repeat right center/cover";
     document.getElementById("hangman-image").style.display = "none";
     document.getElementById("words-section").style.display = "none";
     document.getElementById("mario-text").style.display = "flex";
