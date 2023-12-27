@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- For search enginges -->
+    <meta name="description" content="Hangman - Nintendo">
+    <meta name="keywords" content="hangman, tv, game, tvgame, retro, words, nintendo">
+    <!-- Title of the website -->
+    <title>Hangman - Retro Nintendo Games Characters</title>
+    <!--Favicon, from favicon.io. Licensed bt CC BY 4.0 DEED -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Hangman</h1>
+        <h3>Retro Nintendo Games Characters <i class="fa-solid fa-gamepad"></i></h3>
+        <hr>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <div id="chalkboard">
+            <div id="yoshi-text">
+                <h4>Oopsie daisy!</h4>
+                <p>It seems like you need to go home and play some more Nintendo retro games. May I recommend Kid Icarus
+                    or Super Mario? The correct answer was <span id="word"></span>.</p>
+            </div>
+            <div id="mario-text">
+                <h4>Huuuray!</h4>
+                <p>You seem like a person who knows a lot of important things. Great job! But the princess is in another
+                    castle...</p>
+            </div>
+            <img src="assets/images/hangman0.png" id="hangman-image" alt="Hangman image">
+            <div id="words-section">
+                <p id="words-to-be-guessed"></p>
+                <div id="wrong-guesses">Wrong Guesses: <span id="mistakes-made">0</span> of <span
+                        id="mistakes-allowed"></span></div>
+            </div>
+        </div>
+        <div id="keyboard-section">
+            <div id="keyboard"></div>
+            <button class="basic-button" id="restart-button">Start over</button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <hr>
+        <div id="rules">
+            <h3>How to play</h3>
+            <p>The goal is to guess the secret word before the man is hung. In every guess, you have to guess at one
+                letter.
+                If the letter is in the correct word, the letter will appear at the blank lines. If it is wrong, one
+                line
+                will be added to the man. After seven incorrect guesses, the man is hung and you will lose the game...
+            </p>
+        </div>
+    </footer>
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/f45dddf36e.js" crossorigin="anonymous"></script>
+    <!-- JavaScript -->
+    <script src='assets/js/script.js'></script>
+</body>
+
+</html>
