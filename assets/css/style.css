@@ -19,10 +19,7 @@ body {
   background-color: #c1c1c1;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
   font-family: "Englebert", sans-serif;
 }
 
@@ -105,7 +102,7 @@ main {
 .basic-button {
   padding: 5px 7px;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 17px;
   font-family: inherit;
 }
 
@@ -114,7 +111,7 @@ main {
 }
 
 #restart-button {
-  max-width: 90px;
+  max-width: 100px;
   margin-top: 20px;
 }
 
@@ -159,6 +156,11 @@ footer hr {
 }
 
 /* Media query */
+@media screen and (min-width: 425px) {
+  .basic-button {
+    font-size: 20px;
+}
+
 /* Tablets and larger (768px and larger) */
 @media screen and (min-width: 768px) {
   hr {
