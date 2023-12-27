@@ -32,6 +32,10 @@ header {
   width: 100%;
 }
 
+header h3 {
+  text-align: center;
+}
+
 hr {
   margin: 5px 0 8px 0;
   border: 1px solid #000000;
