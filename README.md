@@ -59,7 +59,7 @@ The colors are chosen with a starting point at the chalkboard. The color was cho
 
 ### Typography
 
-The fonts are chosen to make it look like hand writing and at the same time make it easy for the user to read. They are chosen by scrolling through Google Fonts when the filter of only showing sans serif was set.
+The fonts are chosen to make it look like hand writing and at the same time make it easy for the user to read. They are chosen by scrolling through [Google Fonts](https://fonts.google.com/) when the filter of only showing sans serif was set.
 
 ### Imagery
 
@@ -172,7 +172,11 @@ Detail how to clone the repository, how to fork the repository - how to run the 
 
 ### Code
 
+To create the keyboard, code from [Simon Suh - Vanilla Javascript Hangman Game](https://github.com/simonjsuh/Vanilla-Javascript-Hangman-Game/blob/master/js/hangman.js) was used. Knowledge about index of to the compareAnswer function was gathered from [freeCodeCamp](https://www.freecodecamp.org/news/how-to-check-if-a-string-contains-a-substring-javascript/). To create the guessed word, a thread at [Stackoverflow](https://stackoverflow.com/questions/74006820/how-to-split-a-word-in-a-string-and-replace-letters-with-different-characters-in) was used.
+
 ### Images
+
+The chalkboard, Super Mario and Yoshi images are all a free images from Pixabay.
 
 To convert the images to webp, [Convertio](https://convertio.co/) and [Cloudconvert](https://cloudconvert.com/) was used. [TinyPNG](https://tinypng.com/) was used to compress the images.
 

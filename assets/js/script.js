@@ -23,9 +23,9 @@ let word;
 
 document.getElementById("restart-button").addEventListener("click", resetGame);
 
+// Code from https://github.com/simonjsuh/Vanilla-Javascript-Hangman-Game/blob/master/js/hangman.js
 /**
  * Add keyboard to the page to let the user enter a letter.
- * Code from https://github.com/simonjsuh/Vanilla-Javascript-Hangman-Game/blob/master/js/hangman.js
  */
 function createKeyboard() {
   let insideButtons = "abcdefghijklmnopqrstuvwxyz"
@@ -58,7 +58,7 @@ function selectAWord() {
   word = nintendoCharacters[Math.floor(Math.random() * nintendoCharacters.length)];
 }
 
-// Om indexof https://www.freecodecamp.org/news/how-to-check-if-a-string-contains-a-substring-javascript/
+// About indexof https://www.freecodecamp.org/news/how-to-check-if-a-string-contains-a-substring-javascript/
 /**
  * Compare if the input exist in the correct answer
  */
@@ -84,7 +84,7 @@ function compareAnswer(inputLetter) {
 
 // Help from https://stackoverflow.com/questions/74006820/how-to-split-a-word-in-a-string-and-replace-letters-with-different-characters-in
 /**
- * Update the correct guessed letteres
+ * Update the correct guessed letters
  */
 function inputWord() {
   letterOk = word
