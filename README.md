@@ -76,7 +76,13 @@ One feature to be added is to create a toplist. It allows the user to compare it
 
 ### Validation of Code
 
-Insert screenshots of HTML, CSS and any other code files being tested in the relevant code validator - CSS validator might not validate newer CSS syntax - be careful to read and fully understand why it is giving you an error.
+![Screenshot of the test result at W3C Markup Vaidation Service](doc/hangman-html.webp)
+
+The test at [W3C Markup Validation Service](https://validator.w3.org/) resulted without errors.
+
+![Screenshot of the test result at W3C CSS Validator](doc/hangman-css.webp)
+
+The test at [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) resulted without errors.
 
 ### Lighthouse
 
@@ -85,7 +91,9 @@ Do this for both Desktop and Mobile.
 
 ### Wave Webaim - accessibility testing
 
-You can test your site for accessibility through the wave.webaim site - it needs to be deployed in order for it to test it. Fix any errors that it gives
+![Screenshot of Wave Webaim results](doc/hangman-wave.webp)
+
+The test at Wavw Webaim resulted in 0 errors. The contrast errors don't take consideration that the chalkboard is the background for the text, therefor the contrast errors.
 
 ### Manual Testing
 
