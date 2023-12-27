@@ -36,7 +36,9 @@ The chalkboard is supposed to give the user a feeling of being back in the class
 
 ### Wireframes
 
-INSERT WIREFRAMES
+![Wireframes of hangman page](doc/wireframes.webp)
+
+The wireframes for desktop, tablet devices and mobile devices.
 
 ## Features
 
@@ -68,7 +70,7 @@ The screen that is shown instead of the chalkboard when the game is lost. The te
 
 ## Features to be Added
 
-Describe some additional features you could potentially add to the project that would increase user value - could be things linked to technologies not yet covered by the course but would be a benefit to the user for example, the ability to save an article, or add an article to the site, leave a review.
+One feature to be added is to create a toplist. It allows the user to compare its answer, how fast they answer and how few incorrect letters they used, with other users. This can give the user the motivation to play the game over and over again.
 
 ## Testing
 
@@ -104,13 +106,18 @@ You should have tests for every section of every page.. individually.
 
 ## Technologies Used
 
-Detail what technologies you used. So what code languages, what frameworks, libraries, what software did you use to develop the site - Balsamic for your wireframes, Figma for a mockup?
+The game was build using HTML, CSS and JavaScript. The repository was made in GitHub and the code was written in CodeAnywhere.
+The wireframes were made in Balsamiq.
 
 ## Deployment
 
 Detail how to clone the repository, how to fork the repository - how to run the site locally and how to deploy it.
 
 ## Credits
+
+### Code
+
+### Images
 
 You need to credit where you got anything for your site from.. where are the images from, are they all from the same site? where did you get the content from, if you wrote it yourself, did you fact check anywhere? did you get code from anywhere? if so, it needs to be clearly marked in both the code and the readme.
 
