@@ -188,4 +188,4 @@ Picking the color from the chalkboard and the button background to the [Contrast
 
 Any special acknowledgements you'd like to leave
 
-Back to top link to return to the top of the readme.
+[Back to top](#hangman---retro-nintendo-games-characters)
