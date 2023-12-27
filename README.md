@@ -1,10 +1,10 @@
-# Site Title
+# Hangman - Retro Nintendo Games Characters
 
-![image of site](link to image) - use an image from AmIResponsive that shows the site on multiple devices
+![Image of Hangman site](doc/hangman-ami.webp)
 
 ## Introduction
 
-What is the project about, why did you make it
+The site is a game for having fun and test your knowledge in retro Nintento game characters. The answers don't need to be the heroes, villains and kidnapped princesses are also welcome.
 
 ## Table of Contents
 
@@ -12,29 +12,59 @@ What is the project about, why did you make it
 
 ### User Stories
 
-- User Goals
-- Site Owner Goals
+#### User Goals
+
+The user should experience a retro flashback to the great period when Mario was the greatest hero, the princess was always in another castle and you had to leave the Nintendo on during the nights because you couldn't save your progress. The user should be able to play and test their knowledge in retro Nintendo game characters.
+
+#### Site Owner Goals
+
+The site owner goals is to share the interest about retro Nintendo games and provide a fun experience for the user.
 
 ## Design
 
 ### Colour Scheme
 
+The colors are chosen with a starting point at the chalkboard. The color was chosen to match and at the same time make the chalkboard pop out.
+
 ### Typography
+
+The fonts are chosen to make it look like hand writing and at the same time make it easy for the user to read. They are chosen by scrolling through Google Fonts when the filter of only showing sans serif was set.
 
 ### Imagery
 
+The chalkboard is supposed to give the user a feeling of being back in the classroom and playing hangman at the breaks. The winning and losing images are supposed to give a nostalgic feeling and making the user longing to dust of their old Nintendo consoles.
+
 ### Wireframes
 
-### Figma/Full color mockup if produced
+INSERT WIREFRAMES
 
 ## Features
 
-### Feature title - e.g. Navigation
+### Header
 
-Screenshot of implemented feature
-Description of the value this feature has for the users
+![Screenshot of the header](doc/header.webp)
 
-Repeat for each feature
+The headers purpose is to help the user to see what the theme is.
+
+![Screenshot of the chalkboard area](doc/game-area.webp)
+
+The game area were the user initially can see the number of letters the correct answer. The hangman is displayed and updated when a incorrect guess is made. It's also here the correct guessed letters will appear. The number of incorrect guesses are displayed here.
+
+![Screenshot of the keyboard](doc/keyboard.webp)
+
+The keyboard with the letters a-z. The user will use this letter to guess which the hidden answer is. When a letter is pressed, it becomes disabled until you use the "Start over" button. The button reset the game, clear the correct and incorrect guesses and present a new hidden answer.
+
+![Screenshot of the footer](doc/footer.webp)
+
+The footer explains the rules of the hangman game.
+
+![Screenshot of the winning page](doc/winning-page.webp)
+
+The screen that is shown instead of the chalkboard when the game is won. The text give compliments to the user after giving the correct answer.
+
+![Screenshot of the losing page](doc/loosing-page.webp)
+
+The screen that is shown instead of the chalkboard when the game is lost. The text tells the user the correct answer.
 
 ## Features to be Added
 
