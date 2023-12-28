@@ -42,8 +42,66 @@ hr {
   width: 90%;
 }
 
-/* Main Content */
+/* Start modal */
+#modal-container {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    z-index: 77;
+}
 
+#modal-exit {
+    font-size: 20px;
+    float: right;
+    cursor: pointer;
+}
+
+#modal-header h2 {
+    text-align: center;
+    margin: 10px auto;
+}
+
+#modal-inner {
+    width: 80%;
+    height: fit-content;
+    margin: 10% auto;
+    background: rgba(36, 36, 36);
+    padding: 10px;
+}
+
+#modal-input {
+    display: flex;
+    flex-direction: column;
+}
+
+#modal-content p {
+    margin-bottom: 20px;
+}
+
+#smaller-text {
+    font-size: small;
+}
+
+#name {
+    height: 32px;
+    max-width: 215px;
+    margin-top: 5px;
+}
+
+#let-play-button {
+    margin-top: 10px;
+    padding: 5px 7px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: inherit;
+    cursor: pointer;
+    max-width: fit-content;
+}
+
+/* Main Content */
 main {
   color: #ffffff;
   flex: 1 0 auto;
@@ -108,9 +166,6 @@ main {
   border-radius: 5px;
   font-size: 17px;
   font-family: inherit;
-}
-
-.basic-button:hover {
   cursor: pointer;
 }
 

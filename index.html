@@ -27,15 +27,44 @@
 
     <!-- Main content -->
     <main>
+        <!-- Welcome modal -->
+        <!-- To avoid blank space https://stackoverflow.com/questions/27011061/client-side-validation-for-no-space-allowed-in-input-field -->
+        <div id="modal-container">
+            <div id="modal-inner">
+                <div id="modal-header">
+                    <div id="modal-exit">X</div>
+                    <h2>Welcome to Hangman!</h2>
+                </div>
+                <div id="modal-content">
+                    <p>The rules are simple. The goal is to guess the secret Nintendo character before the man is hung. In every guess, you have to guess at one letter.
+                    If the letter is in the correct word, the letter will appear at the blank lines. If it is wrong, one line
+                    will be added to the man. After seven incorrect guesses, the man is hung and you will lose the game...</p>
+                    <form action="" method="get" class="name-form">
+                        <label for="name">To begin play, please enter your name or and alias: 
+                            <div id="smaller-text">(Between 3 and 20 characters, no blankspace)</div>
+                        </label>
+                        <div id="modal-input">
+                            <input type="text" name="name" id="name" required minlength="3" maxlength="20" pattern="^\S+$">
+                            <input type="submit" value="Lets play!" class="basic-button" id="let-play-button">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game area -->
         <div id="chalkboard">
+            <!-- Losing page -->
             <div id="yoshi-text">
                 <h3>Oopsie daisy!</h3>
                 <p>It seems like you need to go home and play some more Nintendo retro games. May I recommend Kid Icarus or Super Mario? The correct answer was <span id="word"></span>.</p>
             </div>
+            <!-- Winning page -->
             <div id="mario-text">
                 <h3>Huuuray!</h3>
                 <p>You seem like a person who knows a lot of important things. Great job! But the princess is in another castle...</p>
             </div>
+            <!-- Hangman game -->
             <img src="assets/images/hangman0.png" id="hangman-image" alt="Hangman image">
             <div id="words-section">
                 <p id="words-to-be-guessed"></p>
