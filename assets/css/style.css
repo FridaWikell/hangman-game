@@ -176,6 +176,20 @@ main {
   margin: 0 auto;
 }
 
+#bowser-text h3 {
+  font-family: "Patrick Hand", sans-serif;
+}
+
+.home-button {
+  padding: 5px 7px;
+  border-radius: 5px;
+  font-size: 17px;
+  font-family: inherit;
+  background-color: #c1c1c1;
+  margin: 12px 4px 0 0;
+  cursor: pointer;
+}
+
 /* Footer */
 footer {
   display: flex;
