@@ -53,7 +53,7 @@ main {
 #chalkboard {
   background: url("../images/chalkboard.webp") no-repeat center center/cover;
   width: 90%;
-  min-height: 400px;
+  min-height: 280px;
   position: relative;
   margin: 0 auto;
   border: solid 2px #000000;
@@ -61,12 +61,12 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 #hangman-image {
-  height: 300px;
-  margin: 20px auto 0 auto;
+  height: 250px;
+  margin: 10px auto 0 auto;
 }
 
 #words-section {
@@ -78,7 +78,7 @@ main {
 }
 
 #words-to-be-guessed {
-  font-size: 45px;
+  font-size: 35px;
   gap: 10px;
 }
 
@@ -95,7 +95,7 @@ main {
 #keyboard {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 20px;
+  padding-top: 10px;
   width: 90%;
   max-width: 300px;
   margin: 0 auto;
@@ -116,7 +116,7 @@ main {
 
 #restart-button {
   max-width: 100px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 /* Lose page */
@@ -191,11 +191,11 @@ main {
   max-width: fit-content;
   display: flex;
   align-self: center;
+  color: #000000;
 }
 
 a {
   text-decoration: none;
-  color: inherit;
 }
 
 /* Footer */
@@ -216,11 +216,36 @@ footer hr {
 }
 
 /* Media query */
+/* For devices larger than iPhone SE (376px and larger) */
+@media screen and (min-width: 376px) {
+  #hangman-image {
+    height: 300px;
+    margin: 20px auto 0 auto;
+    }
+
+  #words-to-be-guessed {
+    font-size: 45px;
+  }
+
+  #chalkboard {
+    min-height: 400px;
+    padding-bottom: 20px;
+  }
+
+  #keyboard {
+    padding-top: 20px;
+  }
+
+  #restart-button {
+    margin-top: 20px;
+  }
+}
+
 /* Small devices and larger (425px and larger) */
 @media screen and (min-width: 425px) {
   .basic-button {
     font-size: 20px;
-}
+    }
 }
 
 /* Tablets and larger (768px and larger) */
