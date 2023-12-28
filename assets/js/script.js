@@ -14,14 +14,41 @@ let nintendoCharacters = [
 ];
 
 // Global variabels
+const entireModal = document.getElementById("modal-container");
+const modalButton = document.getElementById("modal-exit");
+let playerName = [];
 let answer = "";
-let mistakesAllowed = 7;
+const mistakesAllowed = 7;
 let mistakesMade = 0;
 let guessesMade = [];
 let letterOk = null;
 let word;
 
+// Start function
+document.addEventListener("DOMContentLoaded", openModal);
+
+// Event listeners
+document.getElementById("let-play-button").addEventListener("click", closeModal);
 document.getElementById("restart-button").addEventListener("click", resetGame);
+
+/**
+ * Open start menu modal
+ */
+function openModal() {
+    entireModal.style.display = "block";
+}
+
+/**
+ * Close start menu modal
+ */
+function closeModal() {
+    playerName = document.getElementById("name").value;
+    console.log(playerName);
+    if (playerName.length >= 3) {
+    entireModal.style.display = "none";
+    }
+}
+
 
 // Code from https://github.com/simonjsuh/Vanilla-Javascript-Hangman-Game/blob/master/js/hangman.js
 /**

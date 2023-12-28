@@ -39,13 +39,13 @@
                     <p>The rules are simple. The goal is to guess the secret Nintendo character before the man is hung. In every guess, you have to guess at one letter.
                     If the letter is in the correct word, the letter will appear at the blank lines. If it is wrong, one line
                     will be added to the man. After seven incorrect guesses, the man is hung and you will lose the game...</p>
-                    <form action="" method="get" class="name-form">
+                    <form class="name-form" id="form-modal">
                         <label for="name">To begin play, please enter your name or and alias: 
                             <div id="smaller-text">(Between 3 and 20 characters, no blankspace)</div>
                         </label>
                         <div id="modal-input">
                             <input type="text" name="name" id="name" required minlength="3" maxlength="20" pattern="^\S+$">
-                            <input type="submit" value="Lets play!" class="basic-button" id="let-play-button">
+                            <input type="button" name="submit" value="Lets play!" class="basic-button" id="let-play-button">
                         </div>
                     </form>
                 </div>
