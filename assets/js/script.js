@@ -44,8 +44,11 @@ function openModal() {
 function closeModal() {
     playerName = document.getElementById("name").value;
     console.log(playerName);
-    if (playerName.length >= 3) {
+    if (playerName.split(' ').length == 1 && playerName.length >= 3) {
     entireModal.style.display = "none";
+    }
+    else {
+        alert('Please enter a name with at least three characters and without blankspace');
     }
 }
 
