@@ -28,7 +28,6 @@
     <!-- Main content -->
     <main>
         <!-- Welcome modal -->
-        <!-- To avoid blank space https://stackoverflow.com/questions/27011061/client-side-validation-for-no-space-allowed-in-input-field -->
         <div id="modal-container">
             <div id="modal-inner">
                 <div id="modal-header">
@@ -44,7 +43,7 @@
                             <div id="smaller-text">(Between 3 and 20 characters, no blankspace)</div>
                         </label>
                         <div id="modal-input">
-                            <input type="text" name="name" id="name" required minlength="3" maxlength="20" pattern="^\S+$">
+                            <input type="text" name="name" id="name" required minlength="3" maxlength="20">
                             <input type="button" name="submit" value="Lets play!" class="basic-button" id="let-play-button">
                         </div>
                     </form>
@@ -54,16 +53,32 @@
 
         <!-- Game area -->
         <div id="chalkboard">
+
+            <!-- No script -->
+            <noscript>
+                <div id="luigi-container">
+                    <div id="luigi-image">
+                        <div id="luigi-text">
+                            <h3>Oh no you didn't!?</h3>
+                            <p>Did I just see you turn off script!? This game will not work without JavaScript. Better turn it on
+                                again and give it a new go.</p>
+                        </div>
+                    </div>
+                </div>
+            </noscript>
+
             <!-- Losing page -->
             <div id="yoshi-text">
                 <h3>Oopsie daisy!</h3>
                 <p><span id="user-name"></span>, it seems like you need to go home and play some more Nintendo retro games. May I recommend Kid Icarus or Super Mario? The correct answer was <span id="word"></span>.</p>
             </div>
+
             <!-- Winning page -->
             <div id="mario-text">
                 <h3>Huuuray!</h3>
                 <p><span id="user-name-win"></span>, you seem like a person who knows a lot of important things. Great job! But the princess is in another castle...</p>
             </div>
+            
             <!-- Hangman game -->
             <img src="assets/images/hangman0.png" id="hangman-image" alt="Hangman image">
             <div id="words-section">

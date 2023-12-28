@@ -108,6 +108,18 @@ hr {
     max-width: fit-content;
 }
 
+/* No script */
+
+#luigi-container {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    z-index: 77;
+}
+
 /* Main Content */
 main {
   color: #ffffff;
@@ -213,13 +225,21 @@ main {
   font-family: "Patrick Hand", sans-serif;
 }
 
-/* 404 page */
+/* 404 page & no-script */
 #bowser-image {
   background: url("../images/bowser.webp") no-repeat center center/cover;
+  margin: 0 auto;
+}
+
+#luigi-image {
+    background: url("../images/luigi.webp") no-repeat left center/cover;
+    margin: 109px auto 0 auto;
+}
+
+#bowser-image, #luigi-image {
   width: 90%;
   min-height: 400px;
   position: relative;
-  margin: 0 auto;
   border: solid 2px #000000;
   display: flex;
   flex-direction: row;
@@ -228,7 +248,7 @@ main {
   padding-bottom: 20px;
 }
 
-#bowser-text {
+#bowser-text, #luigi-text {
   width: 80%;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
@@ -238,7 +258,8 @@ main {
   margin: 0 auto;
 }
 
-#bowser-text h3 {
+#bowser-text h3,
+#luigi-text h3 {
   font-family: "Patrick Hand", sans-serif;
 }
 
@@ -357,7 +378,7 @@ footer hr {
     width: 40%;
   }
 
-  #bowser-image {
+  #bowser-image, #luigi-image {
     width: 80%;
     padding: 0;
     max-width: 615px;
