@@ -16,7 +16,7 @@ let nintendoCharacters = [
 // Global variabels
 const entireModal = document.getElementById("modal-container");
 const modalButton = document.getElementById("modal-exit");
-let playerName = [];
+let playerName = "";
 let answer = "";
 const mistakesAllowed = 7;
 let mistakesMade = 0;
@@ -146,6 +146,7 @@ function doWeHaveAWinner() {
     document.getElementById("chalkboard").style.background = "url(assets/images/mario.webp) no-repeat right center/cover";
     document.getElementById("hangman-image").style.display = "none";
     document.getElementById("words-section").style.display = "none";
+    document.getElementById("user-name-win").innerHTML = playerName.charAt(0).toUpperCase() + playerName.slice(1);
     document.getElementById("mario-text").style.display = "flex";
     document.getElementById("keyboard").style.display = "none";
   }
@@ -156,10 +157,12 @@ function doWeHaveAWinner() {
  */
 function doWeHaveALoser() {
   if (mistakesMade === mistakesAllowed) {
+    console.log(playerName);
     document.getElementById("chalkboard").style.background = "url(assets/images/yoshi.webp) no-repeat left center/cover";
     document.getElementById("hangman-image").style.display = "none";
     document.getElementById("words-section").style.display = "none";
     document.getElementById("yoshi-text").style.display = "flex";
+    document.getElementById("user-name").innerHTML = playerName.charAt(0).toUpperCase() + playerName.slice(1);
     document.getElementById("word").innerHTML = word.toUpperCase();
     document.getElementById("keyboard").style.display = "none";
   }
