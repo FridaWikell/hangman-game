@@ -21,7 +21,8 @@ let nintendoCharacters = [
     "popo",
     "nana",
     "yoshi",
-    "birdo"
+    "birdo",
+    "wart"
 ];
 
 // Global variabels
