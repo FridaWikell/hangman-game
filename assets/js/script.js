@@ -77,7 +77,7 @@ function compareAnswer(inputLetter) {
   } else {
     mistakesMade++;
     anotherMistake();
-    document.getElementById("hangman-image").src = "assets/images/hangman" + mistakesMade + ".png";
+    updateHangmanImage();
     doWeHaveALoser();
   }
 }
@@ -99,6 +99,13 @@ function inputWord() {
  */
 function anotherMistake() {
   document.getElementById("mistakes-made").innerHTML = mistakesMade;
+}
+
+/**
+ * Updates Hangman image
+ */
+function updateHangmanImage() {
+    document.getElementById("hangman-image").src = "assets/images/hangman" + mistakesMade + ".png";
 }
 
 /**
