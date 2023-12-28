@@ -10,7 +10,18 @@ let nintendoCharacters = [
     "peach",
     "bowser",
     "ganon",
-    "palutena"
+    "palutena",
+    "goomba",
+    "lakitu",
+    "boo",
+    "koopa",
+    "medusa",
+    "simon",
+    "mikey",
+    "popo",
+    "nana",
+    "yoshi",
+    "birdo"
 ];
 
 // Global variabels

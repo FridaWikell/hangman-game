@@ -48,7 +48,7 @@ hr {
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.75);
     position: fixed;
     z-index: 77;
     display: none;
@@ -57,6 +57,7 @@ hr {
 #modal-container h2 {
     font-family: "Patrick Hand", sans-serif;
 }
+
 
 #modal-header h2 {
     text-align: center;
