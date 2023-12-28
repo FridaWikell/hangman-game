@@ -117,6 +117,7 @@ function doWeHaveAWinner() {
     document.getElementById("hangman-image").style.display = "none";
     document.getElementById("words-section").style.display = "none";
     document.getElementById("mario-text").style.display = "flex";
+    document.getElementById("keyboard").style.display = "none";
   }
 }
 
@@ -130,6 +131,7 @@ function doWeHaveALoser() {
     document.getElementById("words-section").style.display = "none";
     document.getElementById("yoshi-text").style.display = "flex";
     document.getElementById("word").innerHTML = word.toUpperCase();
+    document.getElementById("keyboard").style.display = "none";
   }
 }
 
@@ -145,6 +147,7 @@ function resetGame() {
     document.getElementById("yoshi-text").style.display = "none";
     document.getElementById("mario-text").style.display = "none";
     document.getElementById("chalkboard").style.background = "url(assets/images/chalkboard.webp) no-repeat center center/cover";
+    document.getElementById("keyboard").style.display = "flex";
 
   selectAWord();
   inputWord();
