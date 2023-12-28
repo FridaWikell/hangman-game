@@ -16,7 +16,6 @@ let nintendoCharacters = [
 // Global variabels
 const entireModal = document.getElementById("modal-container");
 let playerName = "";
-let answer = "";
 const mistakesAllowed = 7;
 let mistakesMade = 0;
 let guessesMade = [];
