@@ -131,6 +131,11 @@ main {
   display: none;
 }
 
+#yoshi-text h3 {
+  font-family: "Patrick Hand", sans-serif;
+}
+
+/* Winning page */
 #mario-text {
   width: 80%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -140,6 +145,10 @@ main {
   align-self: center;
   margin: 0 auto;
   display: none;
+}
+
+#mario-text h3 {
+  font-family: "Patrick Hand", sans-serif;
 }
 
 /* 404 page */
