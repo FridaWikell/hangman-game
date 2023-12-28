@@ -48,7 +48,7 @@ hr {
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(0, 0, 0, 0.9);
     position: fixed;
     z-index: 77;
     display: none;
@@ -67,7 +67,7 @@ hr {
 #modal-inner {
     width: 80%;
     height: fit-content;
-    margin: 10% auto;
+    margin: 60px auto;
     background: rgba(36, 36, 36);
     padding: 10px;
     border-radius: 5px;
