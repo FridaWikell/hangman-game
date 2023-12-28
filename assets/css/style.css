@@ -58,12 +58,6 @@ hr {
     font-family: "Patrick Hand", sans-serif;
 }
 
-#modal-exit {
-    font-size: 20px;
-    float: right;
-    cursor: pointer;
-}
-
 #modal-header h2 {
     text-align: center;
     margin: 10px auto;
