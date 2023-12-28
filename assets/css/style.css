@@ -54,6 +54,10 @@ hr {
     display: none;
 }
 
+#modal-container h2 {
+    font-family: "Patrick Hand", sans-serif;
+}
+
 #modal-exit {
     font-size: 20px;
     float: right;

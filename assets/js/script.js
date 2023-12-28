@@ -15,7 +15,6 @@ let nintendoCharacters = [
 
 // Global variabels
 const entireModal = document.getElementById("modal-container");
-const modalButton = document.getElementById("modal-exit");
 let playerName = "";
 let answer = "";
 const mistakesAllowed = 7;
@@ -28,7 +27,6 @@ let word;
 document.addEventListener("DOMContentLoaded", openModal);
 
 // Event listeners
-document.getElementById("let-play-button").addEventListener("click", closeModal);
 document.getElementById("restart-button").addEventListener("click", resetGame);
 
 /**
