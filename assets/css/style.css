@@ -70,6 +70,8 @@ hr {
     margin: 10% auto;
     background: rgba(36, 36, 36);
     padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #000000;
 }
 
 #modal-input {
@@ -299,6 +301,10 @@ footer hr {
 
 /* Small devices and larger (425px and larger) */
 @media screen and (min-width: 425px) {
+  #modal-inner {
+    width: clamp(340px, 70%, 598px);
+    }
+  
   .basic-button {
     font-size: 20px;
     }
