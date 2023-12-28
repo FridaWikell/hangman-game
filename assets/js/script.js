@@ -27,6 +27,7 @@ let word;
 document.addEventListener("DOMContentLoaded", openModal);
 
 // Event listeners
+document.getElementById("let-play-button").addEventListener("click", closeModal);
 document.getElementById("restart-button").addEventListener("click", resetGame);
 
 /**
