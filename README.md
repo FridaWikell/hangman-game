@@ -21,6 +21,7 @@ The site is a game for having fun and test your knowledge in retro Nintento game
 [Wireframes](#wireframes)
 [Features](#features)
 [Header](#header)
+[Start menu](#start-menu)
 [Chalkboard area](#chalkboard-area)
 [Keyboard](#keyboard)
 [Footer](#footer)
@@ -79,6 +80,12 @@ The wireframes for desktop, tablet devices and mobile devices.
 
 The headers purpose is to help the user to see what the theme is.
 
+### Start menu
+
+![Screenshot of the start menu](doc/enter-name.webp)
+
+The start menu makes the user fill out their name before they start the game.
+
 ### Chalkboard area
 
 ![Screenshot of the chalkboard area](doc/game-area.webp)
@@ -108,6 +115,12 @@ The screen that is shown instead of the chalkboard when the game is won. The tex
 ![Screenshot of the losing page](doc/loosing-page.webp)
 
 The screen that is shown instead of the chalkboard when the game is lost. The text tells the user the correct answer.
+
+### No script
+
+![Screenshot of the no script page](doc/noscript.webp)
+
+The page is shown when the user has disabled script. It gives the user an order to enable script to be able to play the game.
 
 ## Features to be Added
 
