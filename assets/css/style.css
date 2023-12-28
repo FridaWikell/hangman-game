@@ -188,6 +188,14 @@ main {
   background-color: #c1c1c1;
   margin: 12px 4px 0 0;
   cursor: pointer;
+  max-width: fit-content;
+  display: flex;
+  align-self: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Footer */
@@ -252,8 +260,14 @@ footer hr {
     width: clamp(574px, 80%, 779px);
   }
 
-  #yoshi-text, #mario-text
+  #yoshi-text, #mario-text, #bowser-text
   {
     width: 40%;
   }
+
+  #bowser-image {
+    width: 80%;
+    padding: 0;
+    max-width: 615px;
+    }
 }
