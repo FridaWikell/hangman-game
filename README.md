@@ -27,6 +27,7 @@ The site is a game for having fun and test your knowledge in retro Nintento game
 [Footer](#footer)
 [Winning page](#winning-page)
 [Losing page](#losing-page)
+[No script](#no-script)
 [Features to be Added](#features-to-be-added)
 [Testing](#testing)
 [Validation of Code](#validation-of-code)
@@ -106,13 +107,13 @@ The footer explains the rules of the hangman game.
 
 ### Winning page
 
-![Screenshot of the winning page](doc/winning-page.webp)
+![Screenshot of the winning page](doc/winning-page-name.webp)
 
 The screen that is shown instead of the chalkboard when the game is won. The text give compliments to the user after giving the correct answer.
 
 ### Losing page
 
-![Screenshot of the losing page](doc/loosing-page.webp)
+![Screenshot of the losing page](doc/losing-page-name.webp)
 
 The screen that is shown instead of the chalkboard when the game is lost. The text tells the user the correct answer.
 
@@ -130,13 +131,17 @@ One feature to be added is to create a toplist. It allows the user to compare it
 
 ### Validation of Code
 
-![Screenshot of the test result at W3C Markup Vaidation Service](doc/hangman-html.webp)
+![Screenshot of the test result at W3C Markup Vaidation Service](doc/valid-html.webp)
 
 The test at [W3C Markup Validation Service](https://validator.w3.org/) resulted without errors.
 
-![Screenshot of the test result at W3C CSS Validator](doc/hangman-css.webp)
+![Screenshot of the test result at W3C CSS Validator](doc/css-valid.webp)
 
 The test at [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) resulted without errors.
+
+![Screenshot of the JSHint test](doc/jshint.webp)
+
+The test at [JSHint](https://jshint.com/) resulted without errors. One variable was declared as unused. After a check, it is used inside of an innerHTML section.
 
 ### Lighthouse
 
@@ -189,7 +194,7 @@ To create the keyboard, code from [Simon Suh - Vanilla Javascript Hangman Game](
 
 ### Images
 
-The chalkboard, Super Mario and Yoshi images are all a free images from Pixabay.
+The chalkboard, Super Mario, Yoshi, Luigi and Bowser images are all a free images from Pixabay.
 
 To convert the images to webp, [Convertio](https://convertio.co/) and [Cloudconvert](https://cloudconvert.com/) was used. [TinyPNG](https://tinypng.com/) was used to compress the images.
 
