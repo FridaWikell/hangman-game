@@ -35,7 +35,11 @@ let letterOk = null;
 let word;
 
 // Event listeners
-document.getElementById("let-play-button").addEventListener("click", closeModal);
+//Help with let play button from https://stackoverflow.com/questions/25028853/addeventlistener-two-functions
+document.getElementById("let-play-button").addEventListener("click", () => {
+    closeModal();
+    createKeyboard();
+});
 document.getElementById("restart-button").addEventListener("click", resetGame);
 
 /**
@@ -198,6 +202,5 @@ function resetGame() {
 document.getElementById("mistakes-allowed").innerHTML = mistakesAllowed;
 
 //Functions to run at start
-createKeyboard();
 selectAWord();
 inputWord();
