@@ -143,7 +143,7 @@ main {
 
 #hangman-image {
   height: 250px;
-  width: auto;
+  width: 204px;
   margin: 10px auto 0 auto;
 }
 
@@ -305,6 +305,7 @@ footer hr {
 @media screen and (min-width: 376px) {
   #hangman-image {
     height: 300px;
+    width: 305px;
     margin: 20px auto 0 auto;
     }
 
@@ -354,7 +355,6 @@ footer hr {
   #hangman-image {
     display: flex;
     justify-self: flex-start;
-    width: 50%;
     padding-left: 30px;
     margin: 0;
   }
