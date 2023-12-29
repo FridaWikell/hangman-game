@@ -184,7 +184,15 @@ The wireframes were made in Balsamiq.
 
 ## Deployment
 
-Detail how to clone the repository, how to fork the repository - how to run the site locally and how to deploy it.
+The site was deplyed at GitHub pages.
+
+- In GitHub, open the repository.
+- Go into the Settings tab.
+- In the menu on the left side, choose "Pages".
+- Under "Build and deployment", go to "Branch". In the dropdown menu where it says "none", change to "main".
+- Press "save".
+  
+Link to the website <https://fridawikell.github.io/hangman-game/>.
 
 ## Credits
 
