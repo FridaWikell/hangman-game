@@ -79,6 +79,11 @@ hr {
     flex-direction: column;
 }
 
+#modal-content {
+    width: auto;
+    height: auto;
+}
+
 #modal-content p {
     margin-bottom: 20px;
 }
@@ -138,6 +143,7 @@ main {
 
 #hangman-image {
   height: 250px;
+  width: auto;
   margin: 10px auto 0 auto;
 }
 
