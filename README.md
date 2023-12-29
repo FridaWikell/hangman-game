@@ -184,7 +184,7 @@ The wireframes were made in Balsamiq.
 
 ## Deployment
 
-The site was deplyed at GitHub pages.
+The site was deployed at GitHub pages.
 
 - In GitHub, open the repository.
 - Go into the Settings tab.
