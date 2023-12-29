@@ -200,6 +200,9 @@ To convert the images to webp, [Convertio](https://convertio.co/) and [Cloudconv
 
 ### Other
 
+The Favicon is from [Favicon](https://favicon.io/) and is licensed by CC BY 4.0 DEED.
+THe icon in the header is from [Font Awesome](https://fontawesome.com/).
+
 Picking the color from the chalkboard and the button background to the [Contrast Grid](#contrast-grid) was made using [Pickcoloronline](https://pickcoloronline.com/tutorials/pick-color-from-website/).
 
 ## Acknowledgements
