@@ -104,7 +104,6 @@ hr {
 }
 
 /* No script */
-
 #luigi-container {
     top: 0;
     left: 0;
@@ -120,6 +119,7 @@ main {
   color: #ffffff;
   flex: 1 0 auto;
   width: 100%;
+  height: 100%;
 }
 
 #chalkboard {
