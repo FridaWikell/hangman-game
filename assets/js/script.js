@@ -34,9 +34,6 @@ let guessesMade = [];
 let letterOk = null;
 let word;
 
-// Start function
-document.addEventListener("DOMContentLoaded", openModal);
-
 // Event listeners
 document.getElementById("let-play-button").addEventListener("click", closeModal);
 document.getElementById("restart-button").addEventListener("click", resetGame);
