@@ -33,9 +33,11 @@ let mistakesMade = 0;
 let guessesMade = [];
 let letterOk = null;
 let word;
+let letterThis = document.getElementsByClassName("+ letter +");
+
 
 // Event listeners
-//Help with let play button from https://stackoverflow.com/questions/25028853/addeventlistener-two-functions
+// Help with let play button from https://stackoverflow.com/questions/25028853/addeventlistener-two-functions
 document.getElementById("let-play-button").addEventListener("click", () => {
     closeModal();
     createKeyboard();
@@ -54,7 +56,6 @@ function openModal() {
  */
 function closeModal() {
     playerName = document.getElementById("name").value;
-    console.log(playerName);
     if (playerName.split(' ').length == 1 && playerName.length >= 3) {
     entireModal.style.display = "none";
     }
@@ -74,23 +75,21 @@ function createKeyboard() {
     .map(
       (letter) =>
         `
-        <button class = "basic-button" "keyboard-button"
-        id = '` +
-        letter +
-        `'
-        onClick="compareAnswer('` +
-        letter +
-        `')" >
-        ` +
-        letter +
-        `
+        <button class="basic-button keyboard-button"
+        id = '` + letter + `' >
+        ` + letter + `
         </button>
         `
     )
     .join("");
 
   document.getElementById("keyboard").innerHTML = insideButtons;
+    document.querySelectorAll(".keyboard-button").forEach((element) => element.addEventListener("click", function () { compareAnswer(this.id); }));
 }
+
+
+
+
 
 /**
  * Select a random word
@@ -168,7 +167,6 @@ function doWeHaveAWinner() {
  */
 function doWeHaveALoser() {
   if (mistakesMade === mistakesAllowed) {
-    console.log(playerName);
     document.getElementById("chalkboard").style.background = "url(assets/images/yoshi.webp) no-repeat left center/cover";
     document.getElementById("hangman-image").style.display = "none";
     document.getElementById("words-section").style.display = "none";
