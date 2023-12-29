@@ -38,6 +38,10 @@ The site is a game for having fun and test your knowledge in retro Nintento game
     - [Manual Testing](#manual-testing)
       - [Welcome page](#welcome-page)
       - [Game area](#game-area)
+      - [Winning page](#winning-page-1)
+      - [Losing page](#losing-page-1)
+      - [No script page](#no-script-page)
+      - [404 page](#404-page-1)
   - [Technologies Used](#technologies-used)
   - [Deployment](#deployment)
   - [Credits](#credits)
@@ -171,15 +175,11 @@ The test at [Contrast Grid](https://contrast-grid.eightshapes.com/?version=1.1.0
 
 ### Manual Testing
 
-You need to perform, and document everything you did to manually test your site.
-At a minimum - you need to check every link on every page works as intended.
-So that is check every link in the nav bar (do this on every single page because its a link in a different file) and any other links that appear on your site.
-Test the responsiveness of the site - you can do this in the dev tools in responsive mode.
-You should also load the site once deployed on as many devices you have access to. What is different from one device to the next? why is it different?
+Every page at the website has been manually tested. It is done in Google Chrome DevTools and on different devices. The devices used was one mobile phone, one laptop and one external screen:
 
-Test the user stories that you created earlier in the readme - did you satisfy the goal, how?
-
-To write up the tests you can use a table,
+Samsung Galaxy A52s (1080 x 2400)
+HP 250 G4 Notebook PC (1366 x 768)
+HP 2309v LCD Screen (1920 x 1080)
 
 #### Welcome page
 
@@ -201,13 +201,39 @@ To write up the tests you can use a table,
 | Usable keyboard | The buttons are pushable and pushing a letter gives a guess at the same letter | Push buttons at the keyboard | The buttons are clickable and pushing a button gives a guess at the same letter as pushed | Pass |
 | Pushed letter disabled | Button gets disabled when it's pressed | Push a button | Button got disabled when it was pushed | Pass |
 | Start over button | Pushing start button makes the game start again | Push the Start over button | The game was resetted | Pass |
-| Responsivness | The page changes so the content fit at the smallest to the largest screens without scrolling | In DevTools, select the smallest device and make it larger step by step | The welcome page was responsive and changed depending on screen size | Pass |
+| Responsivness | The page changes so the content fit at the smallest to the largest screens without scrolling | In DevTools, select the smallest device and make it larger step by step | The page was responsive and changed depending on screen size | Pass |
 | Direct to winning page | When the game is won, direct to winning page | Guess the correct answer | The page was directed to the winning page when the game was won | Pass |
 | Direct to losing page | When the game is lost, direct to losing page | Give seven incorrect guesses | The page was directed to the losing page when the game was lost | Pass |
 
+#### Winning page
 
+| Feature being tested | Expected Outcome | Testing Performed | Actual Outcome | Result (Pass or fail) |
+| -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
+| Name appears | The entered name is shown | Enter a valid name, win the game | The entered name was shown | Pass |
+| Start over button | Pushing start button sends the player to the hangman game again | Push the Start over button | The game was started again | Pass |
+| Responsivness | The page changes so the content fit at the smallest to the largest screens without scrolling | In DevTools, select the smallest device and make it larger step by step | The page was responsive and changed depending on screen size | Pass |
 
-You should have tests for every section of every page.. individually.
+#### Losing page
+
+| Feature being tested | Expected Outcome | Testing Performed | Actual Outcome | Result (Pass or fail) |
+| -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
+| Name appears | The entered name is shown | Enter a valid name, lose the game | The entered name was shown | Pass |
+| Show correct answer | The correct answer is shown | Look for the correct answer | The correct answer is presented last in the text | Pass |
+| Start over button | Pushing start button sends the player to the hangman game again | Push the Start over button | The game was started again | Pass |
+| Responsivness | The page changes so the content fit at the smallest to the largest screens without scrolling | In DevTools, select the smallest device and make it larger step by step | The page was responsive and changed depending on screen size | Pass |
+
+#### No script page
+
+| Feature being tested | Expected Outcome | Testing Performed | Actual Outcome | Result (Pass or fail) |
+| -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
+| Responsivness | The page changes so the content fit at the smallest to the largest screens without scrolling | In DevTools, select the smallest device and make it larger step by step | The page was responsive and changed depending on screen size | Pass |
+
+#### 404 page
+
+| Feature being tested | Expected Outcome | Testing Performed | Actual Outcome | Result (Pass or fail) |
+| -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
+| Home page button | Home page button direct the user to the home page | Push Home page button | Pushing Home Page Button sends the user to the home page | Pass |
+| Responsivness | The page changes so the content fit at the smallest to the largest screens without scrolling | In DevTools, select the smallest device and make it larger step by step | The page was responsive and changed depending on screen size | Pass |
 
 ## Technologies Used
 
