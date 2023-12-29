@@ -36,6 +36,8 @@ The site is a game for having fun and test your knowledge in retro Nintento game
     - [Wave Webaim](#wave-webaim)
     - [Contrast Grid](#contrast-grid)
     - [Manual Testing](#manual-testing)
+      - [Welcome page](#welcome-page)
+      - [Game area](#game-area)
   - [Technologies Used](#technologies-used)
   - [Deployment](#deployment)
   - [Credits](#credits)
@@ -178,9 +180,32 @@ You should also load the site once deployed on as many devices you have access t
 Test the user stories that you created earlier in the readme - did you satisfy the goal, how?
 
 To write up the tests you can use a table,
+
+#### Welcome page
+
 | Feature being tested | Expected Outcome | Testing Performed | Actual Outcome | Result (Pass or fail) |
 | -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
-| enter details here | enter details here | enter details here | enter details here | enter details here |
+| No skipping of name input| Not being able to close the welcome window by clicking | Click everywhere wihtout enter name. Background, welcome window, text, input field, button is fields to click at | The welcome window didn't close | Pass |
+| Enter a validated name | Forced to enter name between 3 and 20 characters, no blankspace | Enter different combinations of name. Less than three letters and combination of blankspace and letters | Entering "ss" followed by three blankspaces didn't render in a valid input. Entering "dd" didn't render in a valid input. | Pass |
+| Alert if the user try to enters incorrect name | An alert will tell the user to enter a valid input | Enter an invalid input | When a invalid input was entered, an alert window was opened which said "Please enter a name with at least three characters and without blankspace | Pass |
+| Responsivness | The page changes so the content fit at the smallest to the largest screens without scrolling | In DevTools, select the smallest device and make it larger step by step | The welcome page was responsive and changed depending on screen size | Pass |
+| Window close when a correct name is entered | Welcome window closes when a valid name is entered | Enter a valid name | The welcome window closes when a valid name is entered | Pass |
+
+#### Game area
+
+| Feature being tested | Expected Outcome | Testing Performed | Actual Outcome | Result (Pass or fail) |
+| -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
+| Hangman image update | Hangman image updates when an incorrect answer is made | Give an incorrect answer | The image updates when an incorrect answer is made | Pass |
+| Wrong guesses update | Number of wrong guesses updates when an incorrect answer is made | Give an incorrect answer | The number of wrong guesses is updated when an incorrect answer is made | Pass
+| Underscore update | When a correct guess is made, the underscore is replaced with the letter | Give a correct answer | The underscore is replaced with the letter | Pass |
+| Usable keyboard | The buttons are pushable and pushing a letter gives a guess at the same letter | Push buttons at the keyboard | The buttons are clickable and pushing a button gives a guess at the same letter as pushed | Pass |
+| Pushed letter disabled | Button gets disabled when it's pressed | Push a button | Button got disabled when it was pushed | Pass |
+| Start over button | Pushing start button makes the game start again | Push the Start over button | The game was resetted | Pass |
+| Responsivness | The page changes so the content fit at the smallest to the largest screens without scrolling | In DevTools, select the smallest device and make it larger step by step | The welcome page was responsive and changed depending on screen size | Pass |
+| Direct to winning page | When the game is won, direct to winning page | Guess the correct answer | The page was directed to the winning page when the game was won | Pass |
+| Direct to losing page | When the game is lost, direct to losing page | Give seven incorrect guesses | The page was directed to the losing page when the game was lost | Pass |
+
+
 
 You should have tests for every section of every page.. individually.
 
