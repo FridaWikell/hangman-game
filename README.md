@@ -28,6 +28,7 @@ The site is a game for having fun and test your knowledge in retro Nintento game
     - [Winning page](#winning-page)
     - [Losing page](#losing-page)
     - [No script](#no-script)
+    - [404 page](#404-page)
   - [Features to be Added](#features-to-be-added)
   - [Testing](#testing)
     - [Validation of Code](#validation-of-code)
@@ -123,6 +124,12 @@ The screen that is shown instead of the chalkboard when the game is lost. The te
 
 The page is shown when the user has disabled script. It gives the user an order to enable script to be able to play the game.
 
+### 404 page
+
+![Screenshot of the 404 page](doc/404.webp)
+
+If the user try to visit a page that doesn't exist, the 404 page is shown. It has a home page button which takes the user back to the home page.
+
 ## Features to be Added
 
 One feature to be added is to create a toplist. It allows the user to compare its answer, how fast they answer and how few incorrect letters they used, with other users. This can give the user the motivation to play the game over and over again.
@@ -190,7 +197,7 @@ The site was deployed at GitHub pages.
 - Go into the Settings tab.
 - In the menu on the left side, choose "Pages".
 - Under "Build and deployment", go to "Branch". In the dropdown menu where it says "none", change to "main".
-- Press "save".
+- Press "Save".
   
 Link to the website <https://fridawikell.github.io/hangman-game/>.
 
