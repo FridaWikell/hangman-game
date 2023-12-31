@@ -159,8 +159,13 @@ The test at [JSHint](https://jshint.com/) resulted without errors.
 
 ### Lighthouse
 
-You can perform a test of your website for performance, accessibility, best practices and SEO through the google chrome lighthouse test - it is in your Dev tools. Bear in mind that your internet connection speed plays a part in the performance figures obtained. Where it scores low, it will give you suggestions on how to improve the site - read the suggestions and think about how to implement them - it could be a good idea.
-Do this for both Desktop and Mobile.
+![Screenshot of Lighthouse results for desktop](doc/lighthouse-desktop.webp)
+
+The test at Lighthouse for desktops gave the result 99 in performance and 97 in accessibility.
+
+![Screenshot of Lighthouse results for mobile](doc/lighthouse-mobile.webp)
+
+The test at Lighthouse for mobile devices gave the result 97 in performance and 97 in accessibility.
 
 ### Wave Webaim
 
