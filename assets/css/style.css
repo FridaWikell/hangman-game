@@ -118,7 +118,6 @@ main {
   color: #ffffff;
   flex: 1 0 auto;
   width: 100%;
-  height: 100%;
 }
 
 #chalkboard {
@@ -137,7 +136,6 @@ main {
 
 #hangman-image {
   height: 250px;
-  width: 204px;
   margin: 10px auto 0 auto;
 }
 
@@ -286,7 +284,6 @@ footer hr {
 @media screen and (min-width: 376px) {
   #hangman-image {
     height: 300px;
-    width: 305px;
     margin: 20px auto 0 auto;
     }
 
