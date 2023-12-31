@@ -41,16 +41,19 @@ document.getElementById("let-play-button").addEventListener("click", () => {
 });
 document.getElementById("restart-button").addEventListener("click", resetGame);
 
+// To valid that only letters are entered https://www.w3resource.com/javascript/form/all-letters-field.php
 /**
  * Close start menu modal
  */
 function closeModal() {
+    var letters = /^[A-Za-z]+$/;
+    
     playerName = document.getElementById("name").value;
-    if (playerName.split(' ').length == 1 && playerName.length >= 3) {
+    if (playerName.match(letters)) {
         document.getElementById("modal-container").style.display = "none";
     }
     else {
-        alert('Please enter a name with at least three characters and without blankspace');
+        alert('Please enter a name with at least three characters (a-z) and without blankspace');
     }
 }
 
