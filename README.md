@@ -242,7 +242,7 @@ During the testing several bugs has been discovered. No bugs were left unfixed.
 
 When a HTML validation was made, an error was generated. The error was "Element div not allowed as child of element label". The bug was solved by moving the div out from the label, making the div and label siblings.
 
-After a validation at JSHint, three unused variables were found. Two of them were removed since they weren't used. The last one was kept since it was used but embedded in a innerHTML where JSHint didn't discovered the function.
+After a validation at JSHint, three unused variables were found. Two of them were removed since they weren't used. The last one was kept since it was used but embedded in a innerHTML where JSHint didn't discovered the function. The function was rewritten so the function wasn't in innerHTML anymore.
 
 When the [contrast grid](#contrast-grid) was made, a AA value (6.4) was at the website. To increase the accessibility, the color was replaced with another one which gave an AAA value.
 
