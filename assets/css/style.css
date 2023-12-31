@@ -121,6 +121,7 @@ main {
 }
 
 #chalkboard {
+  background-color: #000000;
   background: url("../images/chalkboard.webp") no-repeat center center/cover;
   width: 90%;
   min-height: 344px;
