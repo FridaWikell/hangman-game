@@ -268,6 +268,7 @@ Link to the website <https://fridawikell.github.io/hangman-game/>.
 ### Code
 
 To create the keyboard, code from [Simon Suh - Vanilla Javascript Hangman Game](https://github.com/simonjsuh/Vanilla-Javascript-Hangman-Game/blob/master/js/hangman.js) was used. Knowledge about index of to the compareAnswer function was gathered from [freeCodeCamp](https://www.freecodecamp.org/news/how-to-check-if-a-string-contains-a-substring-javascript/). To create the guessed word, a thread at [Stackoverflow](https://stackoverflow.com/questions/74006820/how-to-split-a-word-in-a-string-and-replace-letters-with-different-characters-in) was used.
+The validation of only letters in name input was made with code from [w3resource](https://www.w3resource.com/javascript/form/all-letters-field.php).
 
 ### Images
 
