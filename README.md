@@ -1,6 +1,6 @@
 # Hangman - Retro Nintendo Games Characters
 
-![Image of Hangman site](doc/hangman-ami.webp)
+![Image of Hangman site](doc/amiresponsive.webp)
 
 ## Introduction
 
@@ -97,7 +97,7 @@ The start menu makes the user fill out their name before they start the game.
 
 ### Chalkboard area
 
-![Screenshot of the chalkboard area](doc/game-area.webp)
+![Screenshot of the chalkboard area](doc/hangman-game-area.webp)
 
 The game area were the user initially can see the number of letters the correct answer. The hangman is displayed and updated when a incorrect guess is made. It's also here the correct guessed letters will appear. The number of incorrect guesses are displayed here.
 
