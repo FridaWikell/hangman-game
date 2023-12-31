@@ -26,15 +26,12 @@ let nintendoCharacters = [
 ];
 
 // Global variabels
-const entireModal = document.getElementById("modal-container");
 let playerName = "";
 const mistakesAllowed = 7;
 let mistakesMade = 0;
 let guessesMade = [];
 let letterOk = null;
 let word;
-let letterThis = document.getElementsByClassName("+ letter +");
-
 
 // Event listeners
 // Help with let play button from https://stackoverflow.com/questions/25028853/addeventlistener-two-functions
@@ -45,19 +42,12 @@ document.getElementById("let-play-button").addEventListener("click", () => {
 document.getElementById("restart-button").addEventListener("click", resetGame);
 
 /**
- * Open start menu modal
- */
-function openModal() {
-    entireModal.style.display = "block";
-}
-
-/**
  * Close start menu modal
  */
 function closeModal() {
     playerName = document.getElementById("name").value;
     if (playerName.split(' ').length == 1 && playerName.length >= 3) {
-    entireModal.style.display = "none";
+        document.getElementById("modal-container").style.display = "none";
     }
     else {
         alert('Please enter a name with at least three characters and without blankspace');
@@ -65,7 +55,7 @@ function closeModal() {
 }
 
 
-// Code from https://github.com/simonjsuh/Vanilla-Javascript-Hangman-Game/blob/master/js/hangman.js
+// Code based at code from https://github.com/simonjsuh/Vanilla-Javascript-Hangman-Game/blob/master/js/hangman.js
 /**
  * Add keyboard to the page to let the user enter a letter.
  */
@@ -84,12 +74,8 @@ function createKeyboard() {
     .join("");
 
   document.getElementById("keyboard").innerHTML = insideButtons;
-    document.querySelectorAll(".keyboard-button").forEach((element) => element.addEventListener("click", function () { compareAnswer(this.id); }));
+  document.querySelectorAll(".keyboard-button").forEach((element) => element.addEventListener("click", function () { compareAnswer(this.id);}));
 }
-
-
-
-
 
 /**
  * Select a random word
