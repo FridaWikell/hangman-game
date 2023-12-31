@@ -122,7 +122,7 @@ main {
 }
 
 #chalkboard {
-  background: url("../images/chalkboard") no-repeat center center/cover;
+  background: url("../images/chalkboard.webp") no-repeat center center/cover;
   width: 90%;
   min-height: 344px;
   position: relative;
