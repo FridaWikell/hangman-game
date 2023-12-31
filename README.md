@@ -153,9 +153,9 @@ The test at [W3C Markup Validation Service](https://validator.w3.org/) resulted 
 
 The test at [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) resulted without errors.
 
-![Screenshot of the JSHint test](doc/jshint.webp)
+![Screenshot of the JSHint test](doc/jshint-no-error.webp)
 
-The test at [JSHint](https://jshint.com/) resulted without errors. One variable was declared as unused. After a check, it is used inside of an innerHTML section.
+The test at [JSHint](https://jshint.com/) resulted without errors.
 
 ### Lighthouse
 
