@@ -152,10 +152,17 @@ main {
 #words-to-be-guessed {
   font-size: 35px;
   gap: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 5px 10px;
 }
 
 #wrong-guesses {
   font-size: 17px;
+}
+
+#wrong-guesses p {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
 }
 
 #keyboard-section {
