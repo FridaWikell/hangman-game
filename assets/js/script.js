@@ -191,14 +191,14 @@ inputWord();
 // To prevent iOS to not zoom out after filled in form 
 // From https://stackoverflow.com/questions/2989263/disable-auto-zoom-in-input-text-tag-safari-on-iphone?fbclid=IwAR3UfflQITCKkjmRbtn2xl1mIS_GD2rFXVDwi1-XyEMqwkJwviW0fjgQOOk
 
-//let playButton = document.getElementById("let-play-button");
+let playButton = document.getElementById("let-play-button");
 
 // Set font-size to 16px to prevent zoom 
-//playButton.addEventListener("mousedown", function (e) {
-//    e.target.style.fontSize = "16px";
-//});
+playButton.addEventListener("mousedown", function (e) {
+    e.target.style.fontSize = "16px";
+});
 
 // Change font-size back to its initial value so the design will not break
-//playButton.addEventListener("focus", function (e) {
-//    e.target.style.fontSize = "";
-//});
+playButton.addEventListener("focus", function (e) {
+    e.target.style.fontSize = "";
+});
