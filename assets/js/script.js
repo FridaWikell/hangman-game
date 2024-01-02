@@ -35,7 +35,8 @@ let word;
 
 // Event listeners
 // Help with let play button from https://stackoverflow.com/questions/25028853/addeventlistener-two-functions
-document.getElementById("let-play-button").addEventListener("click", () => {
+document.getElementById("let-play-button").addEventListener("click", (e) => {
+    e.preventDefault();
     closeModal();
     createKeyboard();
 });
