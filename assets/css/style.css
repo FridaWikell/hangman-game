@@ -191,6 +191,7 @@ main {
     font-size: 17px;
     font-family: inherit;
     cursor: pointer;
+    -webkit-appearance: none;
 }
 
 #restart-button {
