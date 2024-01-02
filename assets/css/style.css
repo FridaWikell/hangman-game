@@ -101,6 +101,7 @@ hr {
     font-family: inherit;
     cursor: pointer;
     max-width: fit-content;
+    -webkit-appearance: none;
 }
 
 /* No script */
