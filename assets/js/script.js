@@ -57,7 +57,6 @@ function closeModal() {
     }
 }
 
-
 // Code based at code from https://github.com/simonjsuh/Vanilla-Javascript-Hangman-Game/blob/master/js/hangman.js
 /**
  * Add keyboard to the page to let the user enter a letter.
