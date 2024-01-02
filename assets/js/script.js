@@ -34,7 +34,6 @@ let letterOk = null;
 let word;
 
 // Event listeners
-// Help with let play button from https://stackoverflow.com/questions/25028853/addeventlistener-two-functions
 document.getElementById("let-play-button").addEventListener("click", (e) => {
     e.preventDefault();
     closeModal();
@@ -42,7 +41,6 @@ document.getElementById("let-play-button").addEventListener("click", (e) => {
 });
 document.getElementById("restart-button").addEventListener("click", resetGame);
 
-// To valid that only letters are entered https://www.w3resource.com/javascript/form/all-letters-field.php
 /**
  * Close start menu modal
  */
@@ -58,7 +56,7 @@ function closeModal() {
     }
 }
 
-// Code based at code from https://github.com/simonjsuh/Vanilla-Javascript-Hangman-Game/blob/master/js/hangman.js
+// Parts of the code to create the keyboard are based (but modified) from https://github.com/simonjsuh/Vanilla-Javascript-Hangman-Game/blob/master/js/hangman.js
 /**
  * Add keyboard to the page to let the user enter a letter.
  */
@@ -87,7 +85,6 @@ function selectAWord() {
   word = nintendoCharacters[Math.floor(Math.random() * nintendoCharacters.length)];
 }
 
-// About indexof https://www.freecodecamp.org/news/how-to-check-if-a-string-contains-a-substring-javascript/
 /**
  * Compare if the input exist in the correct answer
  */
@@ -99,7 +96,7 @@ function compareAnswer(inputLetter) {
     guessesMade.push(inputLetter);
   }
 
-  //If input letter is in the correct answer
+  // If input letter is in the correct answer
   if (word.indexOf(inputLetter) >= 0) {
     inputWord();
     doWeHaveAWinner();
@@ -111,7 +108,6 @@ function compareAnswer(inputLetter) {
   }
 }
 
-// Help from https://stackoverflow.com/questions/74006820/how-to-split-a-word-in-a-string-and-replace-letters-with-different-characters-in
 /**
  * Update the correct guessed letters
  */

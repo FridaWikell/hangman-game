@@ -278,9 +278,10 @@ Link to the website <https://fridawikell.github.io/hangman-game/>.
 
 ### Code
 
-To create the keyboard, code from [Simon Suh - Vanilla Javascript Hangman Game](https://github.com/simonjsuh/Vanilla-Javascript-Hangman-Game/blob/master/js/hangman.js) was used. Knowledge about index of to the compareAnswer function was gathered from [freeCodeCamp](https://www.freecodecamp.org/news/how-to-check-if-a-string-contains-a-substring-javascript/). To create the guessed word, a thread at [Stackoverflow](https://stackoverflow.com/questions/74006820/how-to-split-a-word-in-a-string-and-replace-letters-with-different-characters-in) was used.
-The validation of only letters in name input was made with code from [w3resource](https://www.w3resource.com/javascript/form/all-letters-field.php).
-To prevent iOS devices to zoom in when the name is entered, code from [Stackoverflow](https://stackoverflow.com/questions/2989263/disable-auto-zoom-in-input-text-tag-safari-on-iphone?fbclid=IwAR3UfflQITCKkjmRbtn2xl1mIS_GD2rFXVDwi1-XyEMqwkJwviW0fjgQOOk) was used.
+To create the keyboard, code was based and then modified from [Simon Suh - Vanilla Javascript Hangman Game](https://github.com/simonjsuh/Vanilla-Javascript-Hangman-Game/blob/master/js/hangman.js). Knowledge about index of to the compareAnswer function was gathered from [freeCodeCamp](https://www.freecodecamp.org/news/how-to-check-if-a-string-contains-a-substring-javascript/). To create the guessed word, a thread at [Stackoverflow](https://stackoverflow.com/questions/74006820/how-to-split-a-word-in-a-string-and-replace-letters-with-different-characters-in) was used to get more knowledge.
+The knowledge on how to add two functions to one event listener was gathered from [Stackoverflow](https://stackoverflow.com/questions/25028853/addeventlistener-two-functions).
+The validation of only letters in name input was based on code from [w3resource](https://www.w3resource.com/javascript/form/all-letters-field.php).
+To prevent iOS devices to zoom in when the name is entered, code was based from [Stackoverflow](https://stackoverflow.com/questions/2989263/disable-auto-zoom-in-input-text-tag-safari-on-iphone?fbclid=IwAR3UfflQITCKkjmRbtn2xl1mIS_GD2rFXVDwi1-XyEMqwkJwviW0fjgQOOk).
 
 ### Images
 
