@@ -25,7 +25,7 @@ h1 {
 
 button {
     -webkit-appearance: none;
-    appearance: none;
+    background-color: #c1c1c1;
 }
 
 /* Header */
