@@ -26,6 +26,8 @@ h1 {
 button {
     -webkit-appearance: none;
     background-color: #c1c1c1;
+    color: #000000;
+    border: 1px #000000;
 }
 
 /* Header */
@@ -266,14 +268,11 @@ main {
     border-radius: 5px;
     font-size: 17px;
     font-family: inherit;
-    background-color: #c1c1c1;
     margin: 12px 4px 0 0;
     cursor: pointer;
     max-width: fit-content;
     display: flex;
     align-self: center;
-    color: #000000;
-    border: 1px #000000;
 }
 
 a {
