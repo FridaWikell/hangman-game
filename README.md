@@ -177,7 +177,7 @@ The test at Lighthouse for mobile devices gave the result 97 in performance and 
 
 ![Screenshot of Wave Webaim results](doc/wave.webp)
 
-The test at Wave Webaim resulted in 0 errors.
+The test at [Wave Webaim](https://wave.webaim.org/) resulted in 0 errors.
 
 ### Contrast Grid
 
