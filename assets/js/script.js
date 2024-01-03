@@ -63,7 +63,7 @@ function closeModal() {
     var letters = /^[A-Za-z]+$/;
     
     playerName = document.getElementById("name").value;
-    if (playerName.match(letters)) {
+    if (playerName.match(letters) && playerName.length >= 3) {
         document.getElementById("modal-container").style.display = "none";
     }
     else {
