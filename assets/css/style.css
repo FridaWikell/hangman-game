@@ -52,6 +52,7 @@ hr {
     background: rgba(0, 0, 0, 0.9);
     position: fixed;
     z-index: 77;
+    display: none;
 }
 
 #modal-header h2 {
