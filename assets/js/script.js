@@ -41,6 +41,21 @@ document.getElementById("let-play-button").addEventListener("click", (e) => {
 });
 document.getElementById("restart-button").addEventListener("click", resetGame);
 
+// To prevent iOS to zoom in when filling out the form 
+// From https://stackoverflow.com/questions/2989263/disable-auto-zoom-in-input-text-tag-safari-on-iphone?fbclid=IwAR3UfflQITCKkjmRbtn2xl1mIS_GD2rFXVDwi1-XyEMqwkJwviW0fjgQOOk
+
+let nameField = document.getElementById("name");
+
+// Set font-size to 16px to prevent zoom 
+nameField.addEventListener("mousedown", function(event) {
+    event.target.style.fontSize = "16px";
+});
+
+// Change font-size back to its initial value so the design will not break
+nameField.addEventListener("focus", function(event) {
+    event.target.style.fontSize = "";
+});
+
 /**
  * Close start menu modal
  */
@@ -187,18 +202,3 @@ document.getElementById("mistakes-allowed").innerHTML = mistakesAllowed;
 //Functions to run at start
 selectAWord();
 inputWord();
-
-// To prevent iOS to not zoom out after filled in form 
-// From https://stackoverflow.com/questions/2989263/disable-auto-zoom-in-input-text-tag-safari-on-iphone?fbclid=IwAR3UfflQITCKkjmRbtn2xl1mIS_GD2rFXVDwi1-XyEMqwkJwviW0fjgQOOk
-
-let nameField = document.getElementById("name");
-
-// Set font-size to 16px to prevent zoom 
-nameField.addEventListener("mousedown", function(event) {
-    event.target.style.fontSize = "16px";
-});
-
-// Change font-size back to its initial value so the design will not break
-nameField.addEventListener("focus", function(event) {
-    event.target.style.fontSize = "";
-});
