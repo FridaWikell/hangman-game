@@ -301,6 +301,6 @@ Picking the color from the chalkboard and the button background to the [Contrast
 
 ## Acknowledgements
 
-Thanks to Matt Boden for the improvment ideas and coding support. Thanks to Jordan Lundgren for the late night code rescuing. Thanks to Linus Wikell for the proofreading, ideas and for answering all kinds of questions 24/7!
+Thanks to Matt Bodden for the improvment ideas and coding support. Thanks to Jordan Lundgren for the late night code rescuing. Thanks to Linus Wikell for the proofreading, ideas and for answering all kinds of questions 24/7!
 
 [Back to top](#hangman---retro-nintendo-games-characters)
