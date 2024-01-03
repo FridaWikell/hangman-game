@@ -95,6 +95,7 @@ hr {
 
 #let-play-button {
     -webkit-appearance: none;
+    background-color: #f0f0f0;
     margin-top: 10px;
     padding: 5px 7px;
     border-radius: 5px;
