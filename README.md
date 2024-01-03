@@ -93,13 +93,13 @@ The headers purpose is to help the user to see what the theme is.
 
 ### Start menu
 
-![Screenshot of the start menu](doc/enter-name.webp)
+![Screenshot of the start menu](doc/welcome-to-hangman.webp)
 
 The start menu makes the user fill out their name before they start the game.
 
 ### Chalkboard area
 
-![Screenshot of the chalkboard area](doc/hangman-game-area.webp)
+![Screenshot of the chalkboard area](doc/chalkboard-area.webp)
 
 The game area where the user initially can see the number of letters the correct answer contains. The hangman is displayed and updated when an incorrect guess is made. It's also here the correct guessed letters will appear. The number of incorrect guesses are displayed here.
 
