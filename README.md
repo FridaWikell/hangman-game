@@ -4,7 +4,7 @@
 
 ## Introduction
 
-The site is a game for having fun and test your knowledge in retro Nintento game characters. The answers don't need to be the heroes, villains and kidnapped princesses are also welcome.
+The site is a game for having fun and test your knowledge in retro Nintendo game characters. The answers don't need to be the heroes - villains and kidnapped princesses are also welcome.
 
 ## Table of Contents
 
@@ -15,7 +15,7 @@ The site is a game for having fun and test your knowledge in retro Nintento game
     - [User Goals](#user-goals)
     - [Site Owner Goals](#site-owner-goals)
   - [Design](#design)
-    - [Colour Scheme](#colour-scheme)
+    - [Color Scheme](#color-scheme)
     - [Typography](#typography)
     - [Imagery](#imagery)
     - [Wireframes](#wireframes)
@@ -61,11 +61,11 @@ The user should experience a retro flashback to the great period when Mario was 
 
 ### Site Owner Goals
 
-The site owner goals is to share the interest about retro Nintendo games and provide a fun experience for the user.
+The site owner goals are to share the interest about retro Nintendo games and provide a fun experience for the user.
 
 ## Design
 
-### Colour Scheme
+### Color Scheme
 
 The colors are chosen with a starting point at the chalkboard. The color was chosen to match and at the same time make the chalkboard pop out.
 
@@ -75,7 +75,7 @@ The fonts are chosen to make it look like hand writing and at the same time make
 
 ### Imagery
 
-The chalkboard is supposed to give the user a feeling of being back in the classroom and playing hangman at the breaks. The winning and losing images are supposed to give a nostalgic feeling and making the user longing to dust of their old Nintendo consoles.
+The chalkboard is supposed to give the user a feeling of being back in the classroom and playing hangman at the breaks. The winning and losing images are supposed to give a nostalgic feeling and make the user long to dust off their old Nintendo consoles.
 
 ### Wireframes
 
@@ -101,13 +101,13 @@ The start menu makes the user fill out their name before they start the game.
 
 ![Screenshot of the chalkboard area](doc/hangman-game-area.webp)
 
-The game area were the user initially can see the number of letters the correct answer contains. The hangman is displayed and updated when an incorrect guess is made. It's also here the correct guessed letters will appear. The number of incorrect guesses are displayed here.
+The game area where the user initially can see the number of letters the correct answer contains. The hangman is displayed and updated when an incorrect guess is made. It's also here the correct guessed letters will appear. The number of incorrect guesses are displayed here.
 
 ### Keyboard
 
 ![Screenshot of the keyboard](doc/keyboard.webp)
 
-The keyboard with the letters a-z. The user will use this letters to guess which the hidden answer is. When a letter is pressed, it becomes disabled until you use the "Start over" button. The button resets the game, clear the correct and incorrect guesses and present a new hidden answer.
+The keyboard with the letters a-z. The user will use these letters to guess what the hidden answer is. When a letter is pressed, it becomes disabled until you use the "Start over" button. The button resets the game, clears the correct and incorrect guesses and presents a new hidden answer.
 
 ### Footer
 
@@ -119,7 +119,7 @@ The footer explains the rules of the hangman game.
 
 ![Screenshot of the winning page](doc/winning-page-name.webp)
 
-The screen that is shown instead of the chalkboard when the game is won. The text give compliments to the user after giving the correct answer.
+The screen that is shown instead of the chalkboard when the game is won. The text compliments the user after giving the correct answer.
 
 ### Losing page
 
@@ -137,11 +137,11 @@ The page is shown when the user has disabled script. It gives the user an order 
 
 ![Screenshot of the 404 page](doc/404.webp)
 
-If the user try to visit a page that doesn't exist, the 404 page is shown. It has a home page button which takes the user back to the home page.
+If the user tries to visit a page that doesn't exist, the 404 page is shown. It has a home page button which takes the user back to the home page.
 
 ## Features to be Added
 
-One feature to be added is to create a toplist. It allows the user to compare its answer, how fast they answered and how few incorrect letters they used, with other users. This can give the user the motivation to play the game over and over again.
+One feature to be added is to create a toplist. It allows the user to compare its answer, how fast they have answered and how few incorrect letters they used, with other users. This can give the user the motivation to play the game over and over again.
 
 ## Testing
 
@@ -187,7 +187,7 @@ The test at [Contrast Grid](https://contrast-grid.eightshapes.com/?version=1.1.0
 
 ### Manual Testing
 
-Every page at the website has been manually tested. It is done in Google Chrome DevTools and on different devices. The devices used was one mobile phone, one laptop and one external screen:
+Every page at the website has been manually tested. It is done in Google Chrome DevTools and on different devices. The devices used were one mobile phone, one laptop and one external screen:
 
 - Samsung Galaxy A52s (1080 x 2400)
 - HP 250 G4 Notebook PC (1366 x 768)
@@ -197,9 +197,9 @@ Every page at the website has been manually tested. It is done in Google Chrome 
 
 | Feature being tested | Expected Outcome | Testing Performed | Actual Outcome | Result (Pass or fail) |
 | -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
-| No skipping of name input| Not being able to close the welcome window by clicking | Click everywhere wihtout enter name. Background, welcome window, text, input field and button are fields to click at | The welcome window didn't close | Pass |
-| Enter a validated name | Forced to enter name between 3 and 20 letters (a-z), no blankspace | Enter different combinations of name. Less than three letters and combination of blankspace and letters | Entering "ss" followed by three blankspaces didn't render in a valid input. Entering "dd" didn't render in a valid input. | Pass |
-| Alert if the user try to enters incorrect name | An alert will tell the user to enter a valid input | Enter an invalid input | When a invalid input was entered, an alert window was opened which said "Please enter a name with at least three characters (a-z) and without blankspace" | Pass |
+| No skipping of name input| Not being able to close the welcome window by clicking | Click everywhere without entering name. Background, welcome window, text, input field and button are fields to click at | The welcome window didn't close | Pass |
+| Enter a validated name | Forced to enter name between 3 and 20 letters (a-z), no blankspace | Enter different names. Less than three letters and combination of blankspace and letters | Entering "ss" followed by three blankspaces didn't render in a valid input. Entering "dd" didn't render in a valid input. | Pass |
+| Alert if the user tries to enter incorrect name | An alert will tell the user to enter a valid input | Enter an invalid input | When an invalid input was entered, an alert window was opened which said "Please enter a name with at least three characters (a-z) and without blankspace" | Pass |
 | Responsivness | The page changes so the content fit at the smallest to the largest screens without scrolling | In DevTools, select the smallest device and make it larger step by step | The welcome page was responsive and changed depending on screen size | Pass |
 | Window close when a valid name is entered | Welcome window closes when a valid name is entered | Enter a valid name | The welcome window closes when a valid name is entered | Pass |
 
@@ -212,7 +212,7 @@ Every page at the website has been manually tested. It is done in Google Chrome 
 | Underscore update | When a correct guess is made, the underscore is replaced with the letter | Give a correct answer | The underscore is replaced with the letter | Pass |
 | Usable keyboard | The buttons are pushable and pushing a letter gives a guess at the same letter | Push buttons at the keyboard | The buttons are clickable and pushing a button gives a guess at the same letter as pushed | Pass |
 | Pushed letter disabled | Button gets disabled when it's pressed | Push a button | Button got disabled when it was pushed | Pass |
-| Start over button | Pushing start over button makes the game start again | Push the Start over button | The game was resetted | Pass |
+| Start over button | Pushing start over button makes the game start again | Push the Start over button | The game was reset | Pass |
 | Responsivness | The page changes so the content fit at the smallest to the largest screens without scrolling | In DevTools, select the smallest device and make it larger step by step | The page was responsive and changed depending on screen size | Pass |
 | Directing to winning page | When the game is won, direct to winning page | Guess the correct answer | The page was directed to the winning page when the game was won | Pass |
 | Directing to losing page | When the game is lost, direct to losing page | Give seven incorrect guesses | The page was directed to the losing page when the game was lost | Pass |
@@ -222,7 +222,7 @@ Every page at the website has been manually tested. It is done in Google Chrome 
 | Feature being tested | Expected Outcome | Testing Performed | Actual Outcome | Result (Pass or fail) |
 | -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
 | Name appears | The entered name is shown | Enter a valid name, win the game | The entered name was shown | Pass |
-| Start over button | Pushing start over button sends the player to the hangman game again | Push the Start over button | The game was started again | Pass |
+| Start over button | Pushing start over button sends the player to the hangman game again | Push the Start over button | The game was restarted | Pass |
 | Responsivness | The page changes so the content fit at the smallest to the largest screens without scrolling | In DevTools, select the smallest device and make it larger step by step | The page was responsive and changed depending on screen size | Pass |
 
 #### Losing page
@@ -231,7 +231,7 @@ Every page at the website has been manually tested. It is done in Google Chrome 
 | -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
 | Name appears | The entered name is shown | Enter a valid name, lose the game | The entered name was shown | Pass |
 | Show correct answer | The correct answer is shown | Look for the correct answer | The correct answer is presented last in the text | Pass |
-| Start over button | Pushing start over button sends the player to the hangman game again | Push the Start over button | The game was started again | Pass |
+| Start over button | Pushing start over button sends the player to the hangman game again | Push the Start over button | The game was restarted | Pass |
 | Responsivness | The page changes so the content fit at the smallest to the largest screens without scrolling | In DevTools, select the smallest device and make it larger step by step | The page was responsive and changed depending on screen size | Pass |
 
 #### No script page
@@ -244,22 +244,22 @@ Every page at the website has been manually tested. It is done in Google Chrome 
 
 | Feature being tested | Expected Outcome | Testing Performed | Actual Outcome | Result (Pass or fail) |
 | -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
-| Home page button | Home page button direct the user to the home page | Push Home page button | Pushing Home Page Button sends the user to the home page | Pass |
+| Home page button | Home page button directs the user to the home page | Push Home page button | Pushing Home Page Button sends the user to the home page | Pass |
 | Responsivness | The page changes so the content fit at the smallest to the largest screens without scrolling | In DevTools, select the smallest device and make it larger step by step | The page was responsive and changed depending on screen size | Pass |
 
 ### Bugs
 
-During the testing several bugs has been discovered. No bugs were left unfixed.
+During the testing several bugs have been discovered. No bugs were left unfixed.
 
 When a HTML validation was made, an error was generated. The error was "Element div not allowed as child of element label". The bug was solved by moving the div out from the label, making the div and label siblings.
 
-After a validation at JSHint, three unused variables were found. Two of them were removed since they weren't used. The last one was kept since it was used but embedded in a innerHTML where JSHint didn't discovered the function. The function was latter rewritten so the function wasn't in innerHTML anymore.
+After a validation at JSHint, three unused variables were found. Two of them were removed since they weren't used. The last one was kept since it was used but embedded in an innerHTML where JSHint didn't discover the function. The function was later rewritten so it wasn't in innerHTML anymore.
 
-When the [Contrast Grid](#contrast-grid) was made, a AA value (6.4) was at the website. To increase the accessibility, the color was replaced with another one which gave an AAA value.
+When the [Contrast Grid](#contrast-grid) was made, an AA value (6.4) was at the website. To increase the accessibility, the color was replaced with another one which gave an AAA value.
 
 ## Technologies Used
 
-The game was build using HTML, CSS and JavaScript. The repository was made in GitHub and the code was written in CodeAnywhere and Github.dev.
+The game was built using HTML, CSS and JavaScript. The repository was made in GitHub and the code was written in CodeAnywhere and Github.dev.
 The wireframes were made in Balsamiq.
 
 ## Deployment
@@ -286,11 +286,11 @@ To override iOS default button, information from [Apple Developer](https://devel
 
 ### Images
 
-The chalkboard, Super Mario, Yoshi, Luigi and Bowser images are all a free images from Pixabay.
+The chalkboard, Super Mario, Yoshi, Luigi and Bowser images are all free images from Pixabay.
 
 The hangman images were drawn in [Sketch](https://sketch.io/).
 
-To convert the images to webp, [Convertio](https://convertio.co/) and [Cloudconvert](https://cloudconvert.com/) was used. [TinyPNG](https://tinypng.com/) was used to compress the images.
+To convert the images to webp, [Convertio](https://convertio.co/) and [Cloudconvert](https://cloudconvert.com/) were used. [TinyPNG](https://tinypng.com/) was used to compress the images.
 
 ### Other
 
@@ -301,6 +301,6 @@ Picking the color from the chalkboard and the button background to the [Contrast
 
 ## Acknowledgements
 
-Thanks to Matt Boden for the improvment ideas and coding support. Thanks to Jordan Lundgren for the late night code rescuing. Thanks to Linus Wikell for the ideas and for answering all kind of questions 24/7!
+Thanks to Matt Boden for the improvment ideas and coding support. Thanks to Jordan Lundgren for the late night code rescuing. Thanks to Linus Wikell for the proofreading, ideas and for answering all kinds of questions 24/7!
 
 [Back to top](#hangman---retro-nintendo-games-characters)
