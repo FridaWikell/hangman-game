@@ -259,7 +259,7 @@ When the [Contrast Grid](#contrast-grid) was made, a AA value (6.4) was at the w
 
 ## Technologies Used
 
-The game was build using HTML, CSS and JavaScript. The repository was made in GitHub and the code was written in CodeAnywhere.
+The game was build using HTML, CSS and JavaScript. The repository was made in GitHub and the code was written in CodeAnywhere and Github.dev.
 The wireframes were made in Balsamiq.
 
 ## Deployment
@@ -282,10 +282,13 @@ To create the keyboard, code was based and then modified from [Simon Suh - Vanil
 The knowledge on how to add two functions to one event listener was gathered from [Stackoverflow](https://stackoverflow.com/questions/25028853/addeventlistener-two-functions).
 The validation of only letters in name input was based on code from [w3resource](https://www.w3resource.com/javascript/form/all-letters-field.php).
 To prevent iOS devices to zoom in when the name is entered, code was based from [Stackoverflow](https://stackoverflow.com/questions/2989263/disable-auto-zoom-in-input-text-tag-safari-on-iphone?fbclid=IwAR3UfflQITCKkjmRbtn2xl1mIS_GD2rFXVDwi1-XyEMqwkJwviW0fjgQOOk).
+To override iOS default button, information from [Apple Developer](https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariCSSRef/Articles/StandardCSSProperties.html#//apple_ref/css/property/-webkit-appearance) was used.
 
 ### Images
 
 The chalkboard, Super Mario, Yoshi, Luigi and Bowser images are all a free images from Pixabay.
+
+The hangman images were drawn in [Sketch](https://sketch.io/).
 
 To convert the images to webp, [Convertio](https://convertio.co/) and [Cloudconvert](https://cloudconvert.com/) was used. [TinyPNG](https://tinypng.com/) was used to compress the images.
 
