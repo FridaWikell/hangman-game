@@ -67,7 +67,7 @@ function closeModal() {
         document.getElementById("modal-container").style.display = "none";
     }
     else {
-        alert('Please enter a name with at least three characters (a-z) and without blankspace');
+        alert('Please enter a name with at least three characters (a-z) and without blank space');
     }
 }
 
