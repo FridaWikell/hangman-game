@@ -23,13 +23,6 @@ h1 {
     font-family: "Englebert", sans-serif;
 }
 
-button {
-    -webkit-appearance: none;
-    background-color: #c1c1c1;
-    color: #000000;
-    border: 1px #000000;
-}
-
 /* Header */
 header {
     padding: 18px 15px 11px 15px;
@@ -101,6 +94,7 @@ hr {
 }
 
 #let-play-button {
+    -webkit-appearance: none;
     margin-top: 10px;
     padding: 5px 7px;
     border-radius: 5px;
@@ -273,6 +267,9 @@ main {
     max-width: fit-content;
     display: flex;
     align-self: center;
+    background-color: #c1c1c1;
+    color: #000000;
+    border: 1px #000000;
 }
 
 a {
