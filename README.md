@@ -151,11 +151,11 @@ One feature to be added is to create a toplist. It allows the user to compare it
 
 The test at [W3C Markup Validation Service](https://validator.w3.org/) resulted without errors.
 
-![Screenshot of the test result at W3C CSS Validator](doc/css-valid.webp)
+![Screenshot of the test result at W3C CSS Validator](doc/css-validation.webp)
 
 The test at [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) resulted without errors.
 
-![Screenshot of the JSHint test](doc/jshint-no-error.webp)
+![Screenshot of the JSHint test](doc/jshint-valid.webp)
 
 The test at [JSHint](https://jshint.com/) resulted without errors.
 
