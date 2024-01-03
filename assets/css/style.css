@@ -23,6 +23,10 @@ h1 {
     font-family: "Englebert", sans-serif;
 }
 
+button {
+    -webkit-appearance: none;
+}
+
 /* Header */
 header {
     padding: 18px 15px 11px 15px;
@@ -101,7 +105,6 @@ hr {
     font-family: inherit;
     cursor: pointer;
     max-width: fit-content;
-    -webkit-appearance: none;
 }
 
 /* No script */
@@ -191,7 +194,6 @@ main {
     font-size: 17px;
     font-family: inherit;
     cursor: pointer;
-    -webkit-appearance: none;
 }
 
 #restart-button {

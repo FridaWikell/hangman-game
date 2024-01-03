@@ -194,11 +194,11 @@ inputWord();
 let playButton = document.getElementById("let-play-button");
 
 // Set font-size to 16px to prevent zoom 
-playButton.addEventListener("mousedown", function (e) {
-    e.target.style.fontSize = "16px";
+playButton.addEventListener("mousedown", function(event) {
+    event.target.style.fontSize = "16px";
 });
 
 // Change font-size back to its initial value so the design will not break
-playButton.addEventListener("focus", function (e) {
-    e.target.style.fontSize = "";
+playButton.addEventListener("focus", function(event) {
+    event.target.style.fontSize = "";
 });
