@@ -266,6 +266,11 @@ main {
 }
 
 .home-button {
+    -webkit-appearance: none;
+    appearance: auto;
+    background-color: #c1c1c1;
+    color: #000000;
+    border: 1px solid #000000;
     padding: 5px 7px;
     border-radius: 5px;
     font-size: 17px;
@@ -275,9 +280,6 @@ main {
     max-width: fit-content;
     display: flex;
     align-self: center;
-    background-color: #c1c1c1;
-    color: #000000;
-    border: 1px #000000;
 }
 
 a {
