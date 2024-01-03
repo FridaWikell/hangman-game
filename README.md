@@ -1,6 +1,6 @@
 # Hangman - Retro Nintendo Games Characters
 
-![Image of Hangman site](doc/amiresponsive.webp)
+![Image of Hangman site](doc/hangman-amiresponsive.webp)
 
 ## Introduction
 
